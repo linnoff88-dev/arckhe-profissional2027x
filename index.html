@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profissional 2027 — Formação de Implementadores de IA para PMEs</title>
+  <meta name="description" content="Programa gratuito de formação de Implementadores de Soluções de IA para pequenas e médias empresas brasileiras. Método DPIA — Diagnosticar, Processar, Instruir, Automatizar.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FACC15',
+            dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .dark body { background-color: #111827; }
+
+    /* Light mode base */
+    html:not(.dark) body { background-color: #f8fafc; }
+    html:not(.dark) .bg-dark-900 { background-color: #ffffff; }
+    html:not(.dark) .bg-dark-800 { background-color: #f9fafb; }
+    html:not(.dark) .bg-dark-700 { background-color: #f3f4f6; }
+    html:not(.dark) .bg-dark-600 { background-color: #e5e7eb; }
+    html:not(.dark) .text-neutral-100 { color: #111827; }
+    html:not(.dark) .text-neutral-300 { color: #4b5563; }
+    html:not(.dark) .text-neutral-400 { color: #6b7280; }
+    html:not(.dark) .text-neutral-500 { color: #9ca3af; }
+    html:not(.dark) .border-dark-600 { border-color: #d1d5db; }
+    html:not(.dark) .border-dark-700 { border-color: #e5e7eb; }
+
+    /* Light mode — cores acento todas as trilhas */
+    html:not(.dark) .text-emerald-400 { color: #059669; }
+    html:not(.dark) .bg-emerald-500\/20 { background-color: rgba(5,150,105,0.12); }
+    html:not(.dark) .bg-emerald-500\/10 { background-color: rgba(5,150,105,0.08); }
+    html:not(.dark) .border-emerald-500\/30 { border-color: rgba(5,150,105,0.25); }
+    html:not(.dark) .hover\:text-emerald-400:hover { color: #059669; }
+    html:not(.dark) .hover\:bg-emerald-500\/10:hover { background-color: rgba(5,150,105,0.08); }
+    html:not(.dark) .group:hover .group-hover\:text-emerald-400 { color: #059669; }
+
+    html:not(.dark) .text-blue-400 { color: #2563eb; }
+    html:not(.dark) .bg-blue-500\/20 { background-color: rgba(37,99,235,0.12); }
+    html:not(.dark) .bg-blue-500\/10 { background-color: rgba(37,99,235,0.08); }
+    html:not(.dark) .border-blue-500\/30 { border-color: rgba(37,99,235,0.25); }
+    html:not(.dark) .hover\:text-blue-400:hover { color: #2563eb; }
+    html:not(.dark) .hover\:bg-blue-500\/10:hover { background-color: rgba(37,99,235,0.08); }
+    html:not(.dark) .group:hover .group-hover\:text-blue-400 { color: #2563eb; }
+
+    html:not(.dark) .text-purple-400 { color: #7c3aed; }
+    html:not(.dark) .bg-purple-500\/20 { background-color: rgba(124,58,237,0.12); }
+    html:not(.dark) .bg-purple-500\/10 { background-color: rgba(124,58,237,0.08); }
+    html:not(.dark) .border-purple-500\/30 { border-color: rgba(124,58,237,0.25); }
+    html:not(.dark) .hover\:text-purple-400:hover { color: #7c3aed; }
+    html:not(.dark) .hover\:bg-purple-500\/10:hover { background-color: rgba(124,58,237,0.08); }
+    html:not(.dark) .group:hover .group-hover\:text-purple-400 { color: #7c3aed; }
+
+    html:not(.dark) .text-amber-400 { color: #92400e; }
+    html:not(.dark) .bg-amber-500\/20 { background-color: rgba(217,119,6,0.12); }
+    html:not(.dark) .bg-amber-500\/10 { background-color: rgba(217,119,6,0.08); }
+    html:not(.dark) .border-amber-500\/30 { border-color: rgba(217,119,6,0.25); }
+    html:not(.dark) .hover\:text-amber-400:hover { color: #92400e; }
+    html:not(.dark) .hover\:bg-amber-500\/10:hover { background-color: rgba(217,119,6,0.08); }
+    html:not(.dark) .group:hover .group-hover\:text-amber-400 { color: #92400e; }
+
+    html:not(.dark) .text-teal-400 { color: #0d9488; }
+    html:not(.dark) .bg-teal-500\/20 { background-color: rgba(13,148,136,0.12); }
+    html:not(.dark) .bg-teal-500\/10 { background-color: rgba(13,148,136,0.08); }
+    html:not(.dark) .border-teal-500\/30 { border-color: rgba(13,148,136,0.25); }
+    html:not(.dark) .hover\:text-teal-400:hover { color: #0d9488; }
+    html:not(.dark) .hover\:bg-teal-500\/10:hover { background-color: rgba(13,148,136,0.08); }
+    html:not(.dark) .group:hover .group-hover\:text-teal-400 { color: #0d9488; }
+
+    html:not(.dark) .text-rose-400 { color: #9f1239; }
+    html:not(.dark) .bg-rose-500\/20 { background-color: rgba(225,29,72,0.12); }
+    html:not(.dark) .bg-rose-500\/10 { background-color: rgba(225,29,72,0.08); }
+    html:not(.dark) .border-rose-500\/30 { border-color: rgba(225,29,72,0.25); }
+    html:not(.dark) .hover\:text-rose-400:hover { color: #9f1239; }
+    html:not(.dark) .hover\:bg-rose-500\/10:hover { background-color: rgba(225,29,72,0.08); }
+    html:not(.dark) .group:hover .group-hover\:text-rose-400 { color: #9f1239; }
+
+    /* Light mode — remove gradientes e cores especiais */
+    html:not(.dark) [class*="bg-gradient-to"] { background-image: none !important; }
+    html:not(.dark) .text-primary { color: #a16207; }
+    html:not(.dark) .bg-primary\/10 { background-color: rgba(161,98,7,0.08); }
+    html:not(.dark) .border-primary\/40 { border-color: rgba(161,98,7,0.25); }
+    html:not(.dark) .text-sky-400 { color: #0369a1; }
+    html:not(.dark) .text-yellow-400 { color: #a16207; }
+    html:not(.dark) .hover\:text-sky-300:hover { color: #0284c7; }
+    html:not(.dark) .hover\:text-yellow-300:hover { color: #854d0e; }
+    html:not(.dark) .bg-dark-900\/95 { background-color: rgba(255,255,255,0.95); }
+
+    /* Dark mode bordas suavizadas */
+    .dark .border-dark-600 { border-color: #374151; }
+    .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
+  </style>
+</head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+<!-- NAVIGATION -->
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-14">
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
+          <span class="text-2xl">🎯</span>
+          <span class="font-bold text-lg hidden sm:inline">Profissional 2027</span>
+        </a>
+        <span class="text-neutral-600">|</span>
+        <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+      </div>
+      <div class="flex items-center space-x-1 sm:space-x-2">
+        <a href="curso/trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
+        <a href="curso/trilha2/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Diagnosticar</span></a>
+        <a href="curso/trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Processar</span></a>
+        <a href="curso/trilha4/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Instruir</span></a>
+        <a href="curso/trilha5/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Automatizar</span></a>
+        <a href="curso/trilha6/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Aplicação</span></a>
+        <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2">
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="bg-gradient-to-br from-emerald-900/20 via-dark-900 to-dark-900 py-16 sm:py-24 border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-6 border border-primary/40">PROGRAMA GRATUITO · 10-12 SEMANAS</span>
+    <h1 class="text-4xl sm:text-6xl font-bold mb-6 leading-tight">Forme-se como <span class="text-primary">Implementador de IA</span><br>para PMEs brasileiras.</h1>
+    <p class="text-xl text-neutral-300 max-w-3xl mb-8 leading-relaxed">Sai da curiosidade sobre IA e entra no mercado real: diagnostica pequenas empresas, vende soluções simples, implementa assistentes personalizados e treina clientes para vender mais, atender melhor e trabalhar com menos burocracia.</p>
+    <p class="text-lg text-neutral-400 max-w-3xl mb-10 italic">"Ferramenta é commodity. Processo é o ativo."</p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="curso/trilha1/index.html" class="inline-flex items-center justify-center px-6 py-3 bg-primary text-dark-900 font-bold rounded-lg hover:bg-yellow-300 transition-colors">Começar pela Trilha 1 →</a>
+      <a href="#metodo" class="inline-flex items-center justify-center px-6 py-3 bg-dark-700 text-neutral-100 font-semibold rounded-lg hover:bg-dark-600 transition-colors">Entender o método DPIA</a>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+  <!-- STATS / CONTEXTO -->
+  <section class="mb-20">
+    <h2 class="text-2xl font-bold mb-2">O contexto</h2>
+    <p class="text-neutral-400 mb-8">A janela está aberta. Os números falam por si.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><div class="text-3xl font-bold text-emerald-400 mb-2">100%</div><p class="text-sm text-neutral-400">das PMEs brasileiras já tentaram IA de algum modo</p></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><div class="text-3xl font-bold text-amber-400 mb-2">9%</div><p class="text-sm text-neutral-400">conseguem mensurar retorno real</p></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><div class="text-3xl font-bold text-rose-400 mb-2">83%</div><p class="text-sm text-neutral-400">das plataformas compradas viraram prateleira</p></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-6"><div class="text-3xl font-bold text-blue-400 mb-2">4:1</div><p class="text-sm text-neutral-400">gap de adoção entre grandes e pequenas empresas</p></div>
+    </div>
+  </section>
+
+  <!-- TRILHAS -->
+  <section class="mb-20">
+    <h2 class="text-2xl font-bold mb-2">As 6 trilhas</h2>
+    <p class="text-neutral-400 mb-8">Fundamentos + os 4 passos do método DPIA + a Aplicação no mercado real.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="curso/trilha1/index.html" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-6 transition-all">
+        <div class="flex items-center justify-between mb-3"><span class="text-emerald-400 font-bold text-sm">TRILHA 1</span><span class="text-xs text-neutral-500">~4h</span></div>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">🧭 Fundamentos</h3>
+        <p class="text-sm text-neutral-400 mb-4">Manifesto, tese de mercado, perfil do profissional, oportunidade.</p>
+        <div class="flex items-center text-xs text-neutral-500"><span>6 módulos · 36 tópicos</span></div>
+      </a>
+
+      <a href="curso/trilha2/index.html" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-6 transition-all">
+        <div class="flex items-center justify-between mb-3"><span class="text-blue-400 font-bold text-sm">TRILHA 2 · D</span><span class="text-xs text-neutral-500">~5h</span></div>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">🔍 Diagnosticar</h3>
+        <p class="text-sm text-neutral-400 mb-4">Entrevista, dor real, baseline numérico, relatório que se vende.</p>
+        <div class="flex items-center text-xs text-neutral-500"><span>6 módulos · 36 tópicos</span></div>
+      </a>
+
+      <a href="curso/trilha3/index.html" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-6 transition-all">
+        <div class="flex items-center justify-between mb-3"><span class="text-purple-400 font-bold text-sm">TRILHA 3 · P</span><span class="text-xs text-neutral-500">~5h</span></div>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">⚙️ Processar</h3>
+        <p class="text-sm text-neutral-400 mb-4">Mapeamento as-is/to-be, recorte do piloto, stack canônica.</p>
+        <div class="flex items-center text-xs text-neutral-500"><span>6 módulos · 36 tópicos</span></div>
+      </a>
+
+      <a href="curso/trilha4/index.html" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-6 transition-all">
+        <div class="flex items-center justify-between mb-3"><span class="text-amber-400 font-bold text-sm">TRILHA 4 · I</span><span class="text-xs text-neutral-500">~6h</span></div>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition-colors">📚 Instruir</h3>
+        <p class="text-sm text-neutral-400 mb-4">System prompt, base de conhecimento, treinamento da equipe.</p>
+        <div class="flex items-center text-xs text-neutral-500"><span>6 módulos · 36 tópicos</span></div>
+      </a>
+
+      <a href="curso/trilha5/index.html" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-6 transition-all">
+        <div class="flex items-center justify-between mb-3"><span class="text-teal-400 font-bold text-sm">TRILHA 5 · A</span><span class="text-xs text-neutral-500">~6h</span></div>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition-colors">🤖 Automatizar</h3>
+        <p class="text-sm text-neutral-400 mb-4">n8n, WhatsApp Business API, ERPs brasileiros, HITL, observabilidade.</p>
+        <div class="flex items-center text-xs text-neutral-500"><span>6 módulos · 36 tópicos</span></div>
+      </a>
+
+      <a href="curso/trilha6/index.html" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-rose-500/30 p-6 transition-all">
+        <div class="flex items-center justify-between mb-3"><span class="text-rose-400 font-bold text-sm">TRILHA 6</span><span class="text-xs text-neutral-500">~5h</span></div>
+        <h3 class="text-xl font-bold mb-2 group-hover:text-rose-400 transition-colors">💼 Aplicação</h3>
+        <p class="text-sm text-neutral-400 mb-4">Venda do diagnóstico, contrato anti-lock-in, manutenção mensal.</p>
+        <div class="flex items-center text-xs text-neutral-500"><span>6 módulos · 36 tópicos</span></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- METODO DPIA -->
+  <section id="metodo" class="mb-20">
+    <h2 class="text-2xl font-bold mb-2">Método DPIA</h2>
+    <p class="text-neutral-400 mb-8">Quatro passos sequenciais + Acompanhamento como loop externo de manutenção.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-dark-800 rounded-xl border border-blue-500/30 p-6">
+        <div class="text-4xl font-bold text-blue-400 mb-3">D</div>
+        <h3 class="font-bold mb-2">Diagnosticar</h3>
+        <p class="text-sm text-neutral-400">Entrar na PME, medir o tempo, contar pedidos perdidos. Sair com baseline assinado.</p>
+      </div>
+      <div class="bg-dark-800 rounded-xl border border-purple-500/30 p-6">
+        <div class="text-4xl font-bold text-purple-400 mb-3">P</div>
+        <h3 class="font-bold mb-2">Processar</h3>
+        <p class="text-sm text-neutral-400">Mapear o processo as-is e to-be. Escolher UM processo. Definir stack mínima.</p>
+      </div>
+      <div class="bg-dark-800 rounded-xl border border-amber-500/30 p-6">
+        <div class="text-4xl font-bold text-amber-400 mb-3">I</div>
+        <h3 class="font-bold mb-2">Instruir</h3>
+        <p class="text-sm text-neutral-400">Escrever system prompt, montar base de conhecimento, treinar o champion interno.</p>
+      </div>
+      <div class="bg-dark-800 rounded-xl border border-teal-500/30 p-6">
+        <div class="text-4xl font-bold text-teal-400 mb-3">A</div>
+        <h3 class="font-bold mb-2">Automatizar</h3>
+        <p class="text-sm text-neutral-400">Conectar WhatsApp, ERP, NF-e. Definir HITL por risco. Medir contra baseline.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPIOS -->
+  <section class="mb-20">
+    <h2 class="text-2xl font-bold mb-2">7 princípios não-negociáveis</h2>
+    <p class="text-neutral-400 mb-8">Eles atravessam todas as trilhas. Quem larga eles vira "vendedor de ChatGPT".</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex-shrink-0">1</span><div><h3 class="font-semibold mb-1">Ferramenta é commodity. Processo é o ativo.</h3><p class="text-sm text-neutral-400">A ferramenta muda toda semana. O processo configurado sobrevive à troca de modelo.</p></div></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex-shrink-0">2</span><div><h3 class="font-semibold mb-1">Diagnóstico antes de implementação.</h3><p class="text-sm text-neutral-400">Sem baseline assinado pelo cliente, não existe projeto. É só venda de ferramenta.</p></div></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex-shrink-0">3</span><div><h3 class="font-semibold mb-1">Mercado tripartite.</h3><p class="text-sm text-neutral-400">Diagnóstico pago + projeto fixo + manutenção recorrente. Os três sustentam o profissional.</p></div></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex-shrink-0">4</span><div><h3 class="font-semibold mb-1">Human-in-the-loop em 4 níveis.</h3><p class="text-sm text-neutral-400">Assistir, Co-piloto, Autopiloto-com-exceções, Autônomo. Definido por risco, não por entusiasmo.</p></div></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex-shrink-0">5</span><div><h3 class="font-semibold mb-1">Treinamento entra no contrato.</h3><p class="text-sm text-neutral-400">Não é venda extra. Sem treinamento, a equipe rejeita o sistema em 30 dias.</p></div></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex-shrink-0">6</span><div><h3 class="font-semibold mb-1">Cláusula de transição.</h3><p class="text-sm text-neutral-400">Todo contrato sai sem lock-in. O cliente é dono dos dados, prompts, fluxos. Princípio anti-dependência.</p></div></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 flex items-start space-x-4 md:col-span-2"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-bold flex-shrink-0">7</span><div><h3 class="font-semibold mb-1">Stack componível.</h3><p class="text-sm text-neutral-400">Claude/GPT + n8n + Supabase + WhatsApp Cloud + ERP brasileiro via REST. Cada componente é trocável sem refazer o resto.</p></div></div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="mb-20">
+    <h2 class="text-2xl font-bold mb-2">Como funciona</h2>
+    <p class="text-neutral-400 mb-8">10 a 12 semanas, ~100 horas, sem mensalidade.</p>
+    <div class="bg-gradient-to-br from-emerald-900/20 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <div><div class="text-2xl font-bold text-emerald-400 mb-2">Estude</div><p class="text-sm text-neutral-300">8 a 10 horas por semana. As 6 trilhas + biblioteca AIOS open source.</p></div>
+        <div><div class="text-2xl font-bold text-emerald-400 mb-2">Entregue</div><p class="text-sm text-neutral-300">1 diagnóstico pago real em uma PME + 1 piloto em produção em outra (ou na mesma).</p></div>
+        <div><div class="text-2xl font-bold text-emerald-400 mb-2">Certifique</div><p class="text-sm text-neutral-300">Critério único de certificação. Sem prova, sem mensalidade, sem upsell.</p></div>
+      </div>
+      <div class="bg-primary/10 border border-primary/40 rounded-lg p-4">
+        <p class="text-sm text-neutral-300"><strong class="text-primary">Pista de pouso curta.</strong> Janela de 5 a 7 anos antes do mercado se consolidar. Quem começa em 2026 ocupa o espaço antes da concorrência chegar formada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURADORIA -->
+  <section class="mb-20">
+    <h2 class="text-2xl font-bold mb-2">Curadoria</h2>
+    <p class="text-neutral-400 mb-8">Quem responde pelo método.</p>
+    <div class="bg-dark-800 rounded-xl border border-dark-600 p-8">
+      <h3 class="text-xl font-bold mb-3">Nei Maldaner</h3>
+      <p class="text-neutral-300 mb-4">40 anos de mercado de TI brasileiro. Fundador do <strong>SISNEMA</strong>, com 100 mil profissionais de TI formados ao longo das últimas décadas. 500 mil seguidores em redes sociais. Comunidade ativa no <a href="https://inema.vip" target="_blank" class="text-sky-400 hover:text-sky-300">inema.vip</a>.</p>
+      <p class="text-neutral-400 text-sm italic">"Já formei profissional pra mainframe, pra Windows, pra web, pra mobile, pra cloud. Cada onda exigiu um perfil novo. A onda de 2026 a 2030 exige o Implementador. É esse profissional que o Brasil não está formando."</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="mb-12">
+    <div class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">A primeira trilha começa agora.</h2>
+      <p class="text-neutral-300 mb-6 max-w-2xl mx-auto">Fundamentos: manifesto, tese de mercado, perfil do profissional e a oportunidade real. ~4 horas de leitura. Sem cadastro, sem login, sem cobrança.</p>
+      <a href="curso/trilha1/index.html" class="inline-flex items-center justify-center px-8 py-4 bg-primary text-dark-900 font-bold rounded-lg hover:bg-yellow-300 transition-colors">Entrar na Trilha 1 →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-t border-dark-600 py-10 mt-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center space-x-3 text-neutral-500 text-sm">
+        <span>🎯 Profissional 2027</span>
+        <span>·</span>
+        <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a>
+        <span>·</span>
+        <a href="https://inema.vip" target="_blank" class="hover:text-neutral-300">inema.vip</a>
+      </div>
+      <div class="text-neutral-500 text-sm">Conteúdo livre · 2026</div>
+    </div>
+  </div>
+
+<!-- inema-backlink:v1 -->
+<p style="display:block;width:100%;text-align:center;font-size:.85rem;margin:.75rem 0 0;opacity:.85"><a href="https://www.inema.club/cursos/112-profissional-2027-implementadores-de-ia-para-pmes/" style="color:inherit;text-decoration:underline">Ficha completa deste curso no INEMA.CLUB</a> · <a href="https://www.inema.club/aprender-inteligencia-artificial/" style="color:inherit;text-decoration:underline">Guia: como aprender inteligência artificial</a></p>
+<!-- /inema-backlink:v1 -->
+</footer>
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+  const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+  const html = document.documentElement;
+  if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && !html.classList.contains('dark'))) {
+    themeToggleDarkIcon.classList.remove('hidden'); html.classList.remove('dark');
+  } else { themeToggleLightIcon.classList.remove('hidden'); }
+  themeToggle.addEventListener('click', () => {
+    themeToggleDarkIcon.classList.toggle('hidden'); themeToggleLightIcon.classList.toggle('hidden');
+    html.classList.toggle('dark');
+    localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+  });
+</script>
+
+</body>
+</html>

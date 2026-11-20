@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha 2 — Diagnosticar | Profissional 2027</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{900:'#111827',800:'#1f2937',700:'#374151',600:'#4b5563'}}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:'Inter',sans-serif}.dark body{background-color:#111827}
+    .topic-explanation{display:none}.topic-explanation.active{display:block}
+    html:not(.dark) body{background-color:#f8fafc}
+    html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-800{background-color:#f9fafb}
+    html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}
+    html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}
+    html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}
+    html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) .border-dark-700{border-color:#e5e7eb}
+    html:not(.dark) .text-blue-400{color:#2563eb}
+    html:not(.dark) .bg-blue-500\/20{background-color:rgba(37,99,235,.12)}
+    html:not(.dark) .bg-blue-500\/10{background-color:rgba(37,99,235,.08)}
+    html:not(.dark) .border-blue-500\/30{border-color:rgba(37,99,235,.25)}
+    html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(37,99,235,.08)}
+    html:not(.dark) .hover\:bg-blue-500\/30:hover{background-color:rgba(37,99,235,.18)}
+    html:not(.dark) .hover\:text-blue-400:hover{color:#2563eb}
+    html:not(.dark) .hover\:text-emerald-400:hover{color:#059669}html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(5,150,105,.08)}
+    html:not(.dark) .hover\:text-purple-400:hover{color:#7c3aed}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(124,58,237,.08)}
+    html:not(.dark) .hover\:text-amber-400:hover{color:#92400e}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(217,119,6,.08)}
+    html:not(.dark) .hover\:text-teal-400:hover{color:#0d9488}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(13,148,136,.08)}
+    html:not(.dark) .hover\:text-rose-400:hover{color:#9f1239}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(225,29,72,.08)}
+    html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+    html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .bg-primary\/10{background-color:rgba(161,98,7,.08)}
+    html:not(.dark) .border-primary\/40{border-color:rgba(161,98,7,.25)}html:not(.dark) .text-sky-400{color:#0369a1}
+    html:not(.dark) .text-yellow-400{color:#a16207}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+    html:not(.dark) .hover\:text-yellow-300:hover{color:#854d0e}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}
+    .dark .border-dark-600{border-color:#374151}
+    .dark .divide-dark-600>:not([hidden])~:not([hidden]){border-color:#374151}
+  </style>
+</head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+    <div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">🎯</span><span class="font-bold text-lg hidden sm:inline">Profissional 2027</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+    <div class="flex items-center space-x-1 sm:space-x-2">
+      <a href="../trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
+      <a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Diagnosticar</span></a>
+      <a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Processar</span></a>
+      <a href="../trilha4/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Instruir</span></a>
+      <a href="../trilha5/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Automatizar</span></a>
+      <a href="../trilha6/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Aplicação</span></a>
+      <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+  </div></div>
+</nav>
+
+<header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">TRILHA 2 · D do DPIA</span>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">🔍 Diagnosticar</h1>
+    <p class="text-lg text-neutral-400 max-w-3xl">A fase mais importante do DPIA. Entrar na PME, separar dor declarada de dor real, medir baseline numérico e sair com documento assinado pelo cliente. Sem isso, não há projeto — só venda de plataforma que vai virar prateleira.</p>
+    <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">6</div><div class="text-xs text-neutral-400">Módulos</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">36</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~5h</div><div class="text-xs text-neutral-400">Duração</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Aplic.</div><div class="text-xs text-neutral-400">Nível</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-6">Mapa da trilha</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="#modulo-2-1" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.1</span><span class="text-xs text-neutral-500">~45 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🎯 Preparação pré-diagnóstico</h3>
+        <p class="text-xs text-neutral-400">Estudar antes de pisar</p>
+      </a>
+      <a href="#modulo-2-2" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.2</span><span class="text-xs text-neutral-500">~50 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🎙️ Roteiro de entrevista</h3>
+        <p class="text-xs text-neutral-400">Conduzir, não improvisar</p>
+      </a>
+      <a href="#modulo-2-3" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.3</span><span class="text-xs text-neutral-500">~55 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🔎 Mapeamento de dor real</h3>
+        <p class="text-xs text-neutral-400">Declarada ≠ Real</p>
+      </a>
+      <a href="#modulo-2-4" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.4</span><span class="text-xs text-neutral-500">~50 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">📐 Baseline numérico</h3>
+        <p class="text-xs text-neutral-400">Sem chute. Sem "depois mede"</p>
+      </a>
+      <a href="#modulo-2-5" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.5</span><span class="text-xs text-neutral-500">~45 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">📋 Relatório de diagnóstico</h3>
+        <p class="text-xs text-neutral-400">Base contratual assinada</p>
+      </a>
+      <a href="#modulo-2-6" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.6</span><span class="text-xs text-neutral-500">~35 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🚪 Exit-gate e encerramento</h3>
+        <p class="text-xs text-neutral-400">6 itens marcados ou volta</p>
+      </a>
+    </div>
+  </section>
+
+  <h2 class="text-2xl font-bold mb-6">Conteúdo detalhado</h2>
+
+  <!-- MODULO 2.1 -->
+  <div id="modulo-2-1" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.1</span><span class="text-xs text-neutral-500">~45 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">🎯 Preparação pré-diagnóstico</h3>
+      <p class="text-neutral-400 text-sm">Antes de pisar no cliente: estudar a empresa, escolher nicho de entrada, preparar materiais, decidir postura.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🔭</span><div><span class="font-medium">Inteligência da empresa</span><span class="text-neutral-500 text-sm ml-2">- Pesquisa antes da reunião</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Pesquisar a empresa antes — site, redes sociais, Reclame Aqui, Google Maps, nicho. Você chega sabendo o que ela vende, quem compra, qual a reputação.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente percebe quem "fez a lição de casa" vs quem chegou cru. Define a credibilidade do primeiro contato.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Site · LinkedIn do dono · Reclame Aqui · Google Maps reviews · concorrentes diretos.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🧭</span><div><span class="font-medium">Escolha do nicho de entrada</span><span class="text-neutral-500 text-sm ml-2">- Não atende qualquer um</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Filtrar antes de marcar reunião. Empresa &lt; 3 funcionários ou &gt; 100 não cabe. Setor totalmente fora dos 5 verticais top também complica.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Diagnóstico é caro de fazer (1-2 semanas seu tempo). Cliente errado custa caro.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">3-50 funcionários · R$ 1-30M faturamento · dono presente · um dos 5 verticais top.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">📑</span><div><span class="font-medium">Materiais e templates</span><span class="text-neutral-500 text-sm ml-2">- Bloco, gravador, template</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Bloco físico + caneta · gravador (com autorização) · template de roteiro · cronômetro · planilha pra anotar tempos durante walk-the-floor.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem materiais prontos, você improvisa. Improviso vira diagnóstico raso. Diagnóstico raso vira projeto raso.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Template de entrevista · planilha de baseline · gravação com LGPD · bloco físico.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🎭</span><div><span class="font-medium">Postura na reunião inicial</span><span class="text-neutral-500 text-sm ml-2">- Consultor sênior, não vendedor</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Pergunta pelo processo, não pela ferramenta. Ouve mais que fala. Não vende na 1ª reunião. Mostra autoridade sem arrogância.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Define se o dono te enxerga como peer (par sênior) ou como vendedor de plataforma. A postura vende o diagnóstico pago.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Escuta ativa · perguntas de implicação · sem demo de ferramenta · sem promessa.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">💵</span><div><span class="font-medium">Precificação do diagnóstico</span><span class="text-neutral-500 text-sm ml-2">- R$ 1,5-8k antes de marcar</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Pequena (3-15 func): R$ 1,5-4k. Média (15-50): R$ 3-8k. Decidir antes de marcar — não negociar na hora.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Diagnóstico gratuito recorrente sinaliza consultor júnior e destrói margem. Só 1º piloto é grátis (case + depoimento).</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Preço por tamanho · contrato simples · 50% antes / 50% na entrega.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📅</span><div><span class="font-medium">Plano da semana D</span><span class="text-neutral-500 text-sm ml-2">- Cronograma 5-10 dias</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Dia 1: entrevista dono. Dia 2-3: walk-the-floor + entrevistas com operadores. Dia 4-5: medição de baseline. Dia 6-8: análise e relatório. Dia 9-10: apresentação + assinatura.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Estica o diagnóstico além de 2 semanas e o cliente esfria. Acelera demais e sai com baseline raso.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">5-10 dias úteis · sequência walk-the-floor → baseline → relatório · entrega presencial.</p></div></div></div></div>
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-2-1')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-2-1.html" class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 2.2 -->
+  <div id="modulo-2-2" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.2</span><span class="text-xs text-neutral-500">~50 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">🎙️ Roteiro de entrevista</h3>
+      <p class="text-neutral-400 text-sm">A primeira conversa estruturada com dono e operadores. Conduzida, não improvisada.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🏗️</span><div><span class="font-medium">Estrutura da entrevista</span><span class="text-neutral-500 text-sm ml-2">- Abertura · Contexto · Dor · Volume · Fechamento</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">5 blocos sequenciais: Abertura (5min) · Contexto da empresa (15min) · Dor declarada (20min) · Volume e dados (15min) · Fechamento e próximos passos (5min). Total: 60 min.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem estrutura, a conversa vira papo de barzinho. Você sai sem dado, sem foco e sem proposta.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">60 min cronometrados · template fixo · 5 blocos · check de tempo a cada 15.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🎯</span><div><span class="font-medium">SPIN aplicado a PME</span><span class="text-neutral-500 text-sm ml-2">- Situação · Problema · Implicação · Need</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Framework SPIN do Rackham adaptado. Situação (descreva o processo), Problema (onde dói), Implicação ("e se continuar?"), Need-payoff ("quanto valeria resolver?").</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o framework que faz o dono enxergar a dor em termos financeiros — sem você ter que vender.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Implicação é a chave · cliente chega à conclusão sozinho · dor declarada vira dor real.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">👥</span><div><span class="font-medium">Entrevista com dono vs com operadores</span><span class="text-neutral-500 text-sm ml-2">- Versões diferentes da mesma empresa</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Dono fala da estratégia e da dor declarada. Operadores falam da operação real. As duas versões raramente coincidem. Você ouve as duas.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem ouvir operador, você diagnostica a empresa que o dono imagina, não a que existe.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Dono = visão · operador = realidade · gap entre os dois é o diagnóstico.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">❓</span><div><span class="font-medium">Perguntas de implicação financeira</span><span class="text-neutral-500 text-sm ml-2">- "Quanto custa a dor seguir 6 meses?"</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">"Se continuar do jeito que está pelos próximos 6 meses, quanto a empresa deixa de faturar?" — força o cliente a quantificar a dor.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o que justifica ticket do projeto. "R$ 40 mil parece caro" vs "deixar de faturar R$ 200k em 6 meses".</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Custo de inação · cliente quantifica · proposta ancora no número dele.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">🚫</span><div><span class="font-medium">Anti-padrões da entrevista</span><span class="text-neutral-500 text-sm ml-2">- O que evitar dizer</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Não vender ChatGPT. Não prometer payback. Não dizer "vai ficar mais fácil". Não citar ferramenta antes do diagnóstico fechar.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cada um desses sinaliza vendedor de plataforma — você perde autoridade e ticket cai.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Silêncio é estratégia · não improvisa promessa · ferramenta é commodity.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📦</span><div><span class="font-medium">Fechamento da entrevista</span><span class="text-neutral-500 text-sm ml-2">- Combinar próximos 3 passos</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Sai da entrevista com 3 passos combinados: (a) lista de pessoas pra entrevistar, (b) acesso a dados (relatório Bling, planilha), (c) data do walk-the-floor.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem próximos passos combinados, o cliente esfria entre encontros. Você perde 1 semana.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Próximos passos por escrito · enviado em até 1h · respondido pelo dono.</p></div></div></div></div>
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-2-2')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-2-2.html" class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 2.3 -->
+  <div id="modulo-2-3" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.3</span><span class="text-xs text-neutral-500">~55 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">🔎 Mapeamento de dor real</h3>
+      <p class="text-neutral-400 text-sm">Separar o que o dono diz da empresa (dor declarada) do que de fato acontece no chão (dor real). Walk-the-floor.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🗣️</span><div><span class="font-medium">Dor declarada vs dor real</span><span class="text-neutral-500 text-sm ml-2">- Quase nunca coincidem</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Dor declarada = o que o dono diz pra você. Dor real = o que está acontecendo no operacional. Em 80% dos casos, são coisas diferentes.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Resolver dor declarada gera projeto sem ROI. Resolver dor real gera projeto que paga e gera indicação.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Dono = visão estratégica · operador = experiência diária · diagnóstico fecha o gap.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">👟</span><div><span class="font-medium">Walk-the-floor</span><span class="text-neutral-500 text-sm ml-2">- Observação direta da operação</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Ir presencialmente à empresa e observar o processo acontecendo. Sem perguntar. Sem interferir. Cronômetro na mão.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a única forma de capturar exceções, gambiarras, processo paralelo, dependências escondidas.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Observação silenciosa · cronômetro · anotações por pessoa · 2-4h presenciais.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🕸️</span><div><span class="font-medium">Identificar gargalo real</span><span class="text-neutral-500 text-sm ml-2">- Com volume, não com gosto</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Gargalo é o ponto que acumula fila e atrasa o resto. Identifica-se medindo volume × tempo, não pelo "achismo" do dono.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Automatizar fora do gargalo melhora 0%. Automatizar no gargalo libera fluxo inteiro.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Lei de Goldratt (TOC) · ponto de acúmulo · medição × intuição.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">📌</span><div><span class="font-medium">Um processo, não três</span><span class="text-neutral-500 text-sm ml-2">- DPIA é por processo</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Cada processo = um DPIA separado. Tentar diagnosticar 3 processos juntos vira escopo confuso, baseline impreciso, proposta inflada.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Escolher 1 processo é a decisão mais difícil da fase D. Cliente quer "tudo" — você foca em "um".</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Critérios: volume + dor + viabilidade técnica + payback rápido.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">🧑‍🤝‍🧑</span><div><span class="font-medium">Mapeamento de pessoas</span><span class="text-neutral-500 text-sm ml-2">- Quem é sponsor, quem é champion, quem resiste</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Identificar Sponsor (paga e protege) · Champion (vai operar e defender) · Resistor (vai sabotar). Os três precisam ser nomeados no diagnóstico.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem champion identificado no dia zero, projeto morre em 30 dias pós go-live. Sem resistor mapeado, surpresa.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Reposicionamento decidido no dia zero · 100% dos projetos Nautis bem-sucedidos = zero demissão.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">⚠️</span><div><span class="font-medium">Sinais de cliente que não passa por D</span><span class="text-neutral-500 text-sm ml-2">- Quando recusar</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Dono que recusa pagar diagnóstico · empresa sem dados estruturados algum · cultura que não permite walk-the-floor · resistência política do diretor financeiro.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Saber recusar projeto é ativo. Aceitar o errado quebra reputação e queima 2-3 meses do seu tempo.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">3 sinais de "não" · honestidade no encerramento · refere o cliente pra concorrente sem culpa.</p></div></div></div></div>
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-2-3')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-2-3.html" class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 2.4 -->
+  <div id="modulo-2-4" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.4</span><span class="text-xs text-neutral-500">~50 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">📐 Baseline numérico</h3>
+      <p class="text-neutral-400 text-sm">Tempo, volume, taxa de erro, custo. Sem chute. Sem "depois a gente mede". Cálculo de ROI esperado a partir de números reais.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">⏱️</span><div><span class="font-medium">4 dimensões obrigatórias</span><span class="text-neutral-500 text-sm ml-2">- Tempo · Volume · Erro · Custo</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Toda baseline tem 4 medidas: tempo médio do processo, volume mensal, taxa de erro/retrabalho, custo total (hora-operador × tempo + custo de retrabalho).</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem as 4, você não calcula ROI. Sem ROI, cliente não compra projeto. Sem projeto, sem manutenção.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">As 4 dimensões · medição direta · sem "depois mede" · cronômetro + planilha.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">📊</span><div><span class="font-medium">Coleta direta — você mede</span><span class="text-neutral-500 text-sm ml-2">- Cliente não traz número</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Você fica 1-2 dias na empresa medindo. Exporta dado do Bling/Omie. Conta WhatsApp manualmente. Cronometra atendimento. Não confia em "média do dono".</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente não tem o número. Se ele tivesse, já teria resolvido. Sua agregação de dado vale R$ 5k.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Exportação de relatório · contagem manual · cronômetro · amostragem 50+.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">📅</span><div><span class="font-medium">Custo de hora-operador</span><span class="text-neutral-500 text-sm ml-2">- CLT + encargos / horas</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Salário + encargos (CLT ~70%) ÷ horas trabalhadas/mês. Exemplo: vendedor R$ 2.500 → R$ 4.250 total ÷ 176h = R$ 24/h. Mais carga social, ~R$ 30/h.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o input pra calcular custo do processo atual. Sem isso, ROI é abstrato.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Carga CLT total ~70% · 176h úteis/mês · cálculo simples no relatório.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🎯</span><div><span class="font-medium">KPIs-meta de 90 dias</span><span class="text-neutral-500 text-sm ml-2">- Onde quer chegar</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Para cada dimensão da baseline, define meta para 90 dias. Ex: tempo cai de 47min para &lt;5min · erro cai de 11% para &lt;3% · conversão sobe 8 pontos.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É contra esses números que você apresenta resultado em 90 dias. Define se a manutenção continua.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Realista · ambicioso · cliente assina junto · revisão em 30/60/90 dias.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">💸</span><div><span class="font-medium">Cálculo de ROI esperado</span><span class="text-neutral-500 text-sm ml-2">- Payback em meses</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">(Custo atual mensal - Custo projetado pós) ÷ Investimento total = meses de payback. Nautis média: 3,2 meses.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o número que vende o projeto. "R$ 40k com payback de 4 meses" é diferente de "R$ 40k de investimento".</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Payback conservador · margem de segurança · cenário base + cenário ruim.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">✍️</span><div><span class="font-medium">Assinatura do baseline</span><span class="text-neutral-500 text-sm ml-2">- Exit-gate sem o qual não há projeto</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Documento com 4 números + 4 metas. Assinado fisicamente ou digitalmente pelo dono. Sem assinatura, sem fase P.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Em 90 dias, sem baseline assinado, vira "ah mas era diferente". Assinatura é defesa do implementador.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">DocuSign / ZapSign · 1 página · assinatura é Princípio 2 do método.</p></div></div></div></div>
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-2-4')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-2-4.html" class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 2.5 -->
+  <div id="modulo-2-5" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.5</span><span class="text-xs text-neutral-500">~45 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">📋 Relatório de diagnóstico</h3>
+      <p class="text-neutral-400 text-sm">O documento que vira a base contratual. Estrutura, narrativa, defesa em reunião, assinatura do baseline.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🏗️</span><div><span class="font-medium">Estrutura padrão</span><span class="text-neutral-500 text-sm ml-2">- 7 seções fixas</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Sumário executivo · Contexto · Processo as-is · Dor real + dor declarada · Baseline + KPIs-meta · Proposta · Próximos passos.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Estrutura repetida em todos os diagnósticos = você ganha velocidade e o cliente reconhece padrão de seriedade.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">7 seções · 8-15 páginas · template reusável · narrativa coerente.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">📜</span><div><span class="font-medium">Sumário executivo</span><span class="text-neutral-500 text-sm ml-2">- 1 página, leitura em 3 min</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Resumo de 1 página: problema · baseline · proposta · payback. Cliente lê o sumário e sabe se quer ler o resto.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o que o dono mostra pro contador, pro sócio, pra esposa. Tem que parar em pé sozinho.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">1 página máximo · números em destaque · payback em meses · CTA claro.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">📈</span><div><span class="font-medium">Apresentação visual</span><span class="text-neutral-500 text-sm ml-2">- Gráficos do baseline</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Gráficos simples (barra, antes/depois projetado) das 4 dimensões do baseline. Não usar gráfico complexo. Cliente é dono de PME, não analista.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Visual ajuda na defesa em reunião. Dono enxerga o "gap" sem precisar ler texto.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Gráfico simples · barra antes/depois · cores limitadas · números grandes.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🗣️</span><div><span class="font-medium">Defesa em reunião</span><span class="text-neutral-500 text-sm ml-2">- Apresentação presencial 30-45 min</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Encontro presencial com dono (+ sócio + contador se aplicável). Você apresenta o relatório, defende a proposta, responde objeções, fecha próximos passos.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem apresentação presencial, taxa de fechamento cai muito. Cliente precisa ver você sustentando o número.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Presencial &gt; vídeo &gt; PDF · 30-45 min · 3 cenários (base, conservador, ambicioso).</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">❓</span><div><span class="font-medium">Objeções típicas</span><span class="text-neutral-500 text-sm ml-2">- "Caro" · "Já tenho ChatGPT"</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">"Está caro" → ancorar no custo de inação. "Já tenho ChatGPT" → diferença entre ferramenta e processo. "Vou pensar" → próximos passos por escrito.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">As 4-5 objeções que aparecem em todo cliente. Tem resposta pronta = não improvisa.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Custo de inação · ferramenta ≠ processo · próximos passos por escrito sempre.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📂</span><div><span class="font-medium">Entrega e arquivamento</span><span class="text-neutral-500 text-sm ml-2">- PDF + planilha + baseline assinado</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Cliente recebe: PDF do relatório · planilha do baseline · termo de baseline assinado · proposta de projeto separada · próximos passos com data.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Entrega organizada vira referência. Cliente compartilha com sócios, contador, advogado. Você ganha exposição.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Pacote único · drive compartilhado · prazo definido · CRM atualizado.</p></div></div></div></div>
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-2-5')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-2-5.html" class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 2.6 -->
+  <div id="modulo-2-6" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.6</span><span class="text-xs text-neutral-500">~35 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">🚪 Exit-gate e encerramento</h3>
+      <p class="text-neutral-400 text-sm">6 itens marcados ou a fase D não fecha. O exit-gate filtra projeto saudável de projeto que vai virar prateleira.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">📋</span><div><span class="font-medium">Os 6 itens do exit-gate</span><span class="text-neutral-500 text-sm ml-2">- Sem todos, não passa pra P</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">(1) Baseline assinado · (2) KPIs-meta acordados · (3) Sponsor e champion nomeados · (4) Proposta de projeto aceita · (5) Pagamento do diagnóstico recebido · (6) Data do kickoff de P agendada.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem os 6 marcados, a fase D não fechou. Avançar pra P sem isso é caminhar pra falhar.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Checklist físico · revisão antes de mudar de fase · honestidade com o próprio trabalho.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🔄</span><div><span class="font-medium">O que fazer se item falha</span><span class="text-neutral-500 text-sm ml-2">- Volta, não avança</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Se baseline não foi assinado: volta. Se champion não foi nomeado: volta. Se pagamento não veio: pausa e renegocia. Não avança "esperando resolver depois".</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Resolver depois quase nunca acontece. Volta agora é desconfortável; resolver na fase A é desastre.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Disciplina de gate · desconforto agora &lt; desastre depois · honestidade vende.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">📝</span><div><span class="font-medium">Encerramento documental</span><span class="text-neutral-500 text-sm ml-2">- Arquivamento + CRM</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Cria pasta no drive do cliente (relatório, baseline, contrato), atualiza CRM com status, agenda revisão 90 dias pós go-live mesmo antes de começar P.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente seguinte chega antes de você acabar de documentar o atual. Organização é defesa do tempo.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Pasta padrão por cliente · CRM atualizado · revisão pré-agendada.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🤝</span><div><span class="font-medium">Ponte para fase P</span><span class="text-neutral-500 text-sm ml-2">- Kickoff de Processar</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Reunião de kickoff agendada para 5-7 dias depois do fechamento de D. Pauta: levantar dados, planilhas, acessos a sistemas, vocabulário interno.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem ponte rápida, cliente esfria. Esfriou: você gasta 1-2 semanas reativando interesse.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Kickoff em &lt;7 dias · pauta enviada por escrito · champion presente.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">🪞</span><div><span class="font-medium">Retrô do próprio diagnóstico</span><span class="text-neutral-500 text-sm ml-2">- O que faria diferente</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Após cada diagnóstico, 30 min de retrospectiva: o que demorou mais que esperado, qual pergunta foi mais útil, o que faltou perguntar, o que cortar do template.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Diagnóstico #5 fica 40% mais rápido que o #1 se você documentar aprendizados.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">30 min pós-cliente · documento curto · template evolui · vertical fica óbvia.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">❌</span><div><span class="font-medium">Quando recusar avançar pra P</span><span class="text-neutral-500 text-sm ml-2">- O "não" caro mas necessário</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Cliente quer projeto sem assinar baseline · sem nomear champion · sem aceitar a proposta de reposicionamento de pessoas. Você devolve o dinheiro do diagnóstico se necessário.</p></div>
+        <div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Recusar projeto ruim é ativo. Aceitar queima 3-6 meses + reputação.</p></div>
+        <div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Devolução parcial · honestidade · referência pra outro consultor · sem ressentimento.</p></div></div></div></div>
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-2-6')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-2-6.html" class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <div class="mt-12 flex flex-col sm:flex-row gap-4">
+    <a href="../trilha1/index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Trilha 1 Fundamentos</a>
+    <a href="../trilha3/index.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors">Próxima trilha: Processar →</a>
+  </div>
+
+</main>
+
+<div id="modal-2-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.1</span><span class="font-semibold">Preparação pré-diagnóstico</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-2-1.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-2-2" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.2</span><span class="font-semibold">Roteiro de entrevista</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-2-2.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-2-3" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.3</span><span class="font-semibold">Mapeamento de dor real</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-2-3.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-2-4" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.4</span><span class="font-semibold">Baseline numérico</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-2-4.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-2-5" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.5</span><span class="font-semibold">Relatório de diagnóstico</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-2-5.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-2-6" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.6</span><span class="font-semibold">Exit-gate</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-2-6.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Profissional 2027 · <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p></div></footer>
+
+<script>
+function toggleTopic(button){const t=button.closest('.topic-item');const e=t.querySelector('.topic-explanation');const c=button.closest('.bg-dark-800');c.querySelectorAll('.topic-explanation.active').forEach(x=>{if(x!==e)x.classList.remove('active')});e.classList.toggle('active')}
+function openModal(id){const m=document.getElementById(id);if(m){m.classList.remove('hidden');document.body.style.overflow='hidden'}}
+function closeModal(){document.querySelectorAll('.modal').forEach(m=>m.classList.add('hidden'));document.body.style.overflow='auto'}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+const themeToggle=document.getElementById('theme-toggle');const dIcon=document.getElementById('theme-toggle-dark-icon');const lIcon=document.getElementById('theme-toggle-light-icon');const html=document.documentElement;
+if(localStorage.getItem('theme')==='light'||(!localStorage.getItem('theme')&&!html.classList.contains('dark'))){dIcon.classList.remove('hidden');html.classList.remove('dark')}else{lIcon.classList.remove('hidden')}
+themeToggle.addEventListener('click',()=>{dIcon.classList.toggle('hidden');lIcon.classList.toggle('hidden');html.classList.toggle('dark');localStorage.setItem('theme',html.classList.contains('dark')?'dark':'light')});
+</script>
+
+</body></html>

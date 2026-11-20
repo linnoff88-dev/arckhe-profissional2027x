@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1.2 Tese de mercado | Trilha 1 | Profissional 2027</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{900:'#111827',800:'#1f2937',700:'#374151',600:'#4b5563'}}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:'Inter',sans-serif}.dark body{background-color:#111827}
+    html:not(.dark) body{background-color:#f8fafc}
+    html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-800{background-color:#f9fafb}
+    html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}
+    html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}
+    html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}
+    html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) .border-dark-700{border-color:#e5e7eb}
+    html:not(.dark) .text-emerald-400{color:#059669}html:not(.dark) .bg-emerald-500\/20{background-color:rgba(5,150,105,.12)}
+    html:not(.dark) .bg-emerald-500\/10{background-color:rgba(5,150,105,.08)}html:not(.dark) .border-emerald-500\/30{border-color:rgba(5,150,105,.25)}
+    html:not(.dark) .bg-emerald-900\/20,html:not(.dark) .bg-emerald-900\/30,html:not(.dark) .bg-emerald-900\/40{background-color:rgba(5,150,105,.08)}
+    html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(5,150,105,.08)}html:not(.dark) .hover\:text-emerald-400:hover{color:#059669}
+    html:not(.dark) .hover\:text-blue-400:hover{color:#2563eb}html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(37,99,235,.08)}
+    html:not(.dark) .hover\:text-purple-400:hover{color:#7c3aed}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(124,58,237,.08)}
+    html:not(.dark) .hover\:text-amber-400:hover{color:#92400e}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(217,119,6,.08)}
+    html:not(.dark) .hover\:text-teal-400:hover{color:#0d9488}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(13,148,136,.08)}
+    html:not(.dark) .hover\:text-rose-400:hover{color:#9f1239}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(225,29,72,.08)}
+    html:not(.dark) .text-blue-400{color:#2563eb}html:not(.dark) .bg-blue-900\/20{background-color:rgba(37,99,235,.08)}html:not(.dark) .border-blue-500\/30{border-color:rgba(37,99,235,.25)}
+    html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-900\/20{background-color:rgba(220,38,38,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(220,38,38,.25)}
+    html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+    html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .bg-primary\/10{background-color:rgba(161,98,7,.08)}
+    html:not(.dark) .border-primary\/40,html:not(.dark) .border-primary\/30{border-color:rgba(161,98,7,.25)}
+    html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .text-yellow-400{color:#a16207}
+    html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}html:not(.dark) .hover\:text-yellow-300:hover{color:#854d0e}
+    html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}
+    .dark .border-dark-600{border-color:#374151}.dark .divide-dark-600>:not([hidden])~:not([hidden]){border-color:#374151}
+  </style>
+</head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+    <div class="flex items-center space-x-4">
+      <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">🎯</span><span class="font-bold text-lg hidden sm:inline">Profissional 2027</span></a>
+      <span class="text-neutral-600">|</span>
+      <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+    </div>
+    <div class="flex items-center space-x-1 sm:space-x-2">
+      <a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
+      <a href="../trilha2/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Diagnosticar</span></a>
+      <a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Processar</span></a>
+      <a href="../trilha4/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Instruir</span></a>
+      <a href="../trilha5/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Automatizar</span></a>
+      <a href="../trilha6/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Aplicação</span></a>
+      <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+  </div></div>
+</nav>
+
+<nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+  <div class="flex items-center space-x-2 text-sm text-neutral-400">
+    <a href="../../index.html" class="hover:text-emerald-400">Início</a><span>/</span>
+    <a href="index.html" class="hover:text-emerald-400">Trilha 1</a><span>/</span>
+    <span class="text-emerald-400">Módulo 1.2</span>
+  </div>
+</nav>
+
+<header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÓDULO 1.2</span>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">📊 Tese de mercado</h1>
+    <p class="text-lg text-neutral-400 max-w-3xl">O fato bruto: 21,7 milhões de PMEs, 10% de adoção, gap 4:1 com grandes empresas. A janela 2026-2030 e por que a particularidade brasileira é vantagem defensiva.</p>
+    <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">40</div><div class="text-xs text-neutral-400">Minutos</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Base</div><div class="text-xs text-neutral-400">Nível</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Mercado</div><div class="text-xs text-neutral-400">Tipo</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+  <section id="topico-1" class="mb-16">
+    <div class="flex items-center space-x-4 mb-6">
+      <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">1</span>
+      <h2 class="text-2xl font-bold">🧱 O fato bruto</h2>
+    </div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">O Brasil tem <strong class="text-emerald-400">21,7 milhões de pequenos negócios ativos</strong> — MEI, microempresas e empresas de pequeno porte juntos representam 99% de todas as empresas do país e respondem por 27% do PIB e 52% dos empregos formais privados (Sebrae/DataSebrae; IBGE).</p>
+    <p class="text-neutral-300 mb-6 leading-relaxed">Desse universo, <strong class="text-emerald-400">apenas 10%</strong> das pequenas empresas usam alguma forma de IA de modo estruturado em seus processos (Cetic.br, TIC Empresas 2024). Em grandes empresas, o número é 38%. O gap de adoção é de quase quatro vezes. E está estagnado: o percentual geral de 13% se manteve igual entre 2021 e 2024, apesar do boom de ferramentas no período.</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-3xl font-bold text-emerald-400 mb-1">21,7M</div><p class="text-xs text-neutral-400">Pequenos negócios ativos</p></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-3xl font-bold text-emerald-400 mb-1">99%</div><p class="text-xs text-neutral-400">De todas as empresas</p></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-3xl font-bold text-emerald-400 mb-1">27%</div><p class="text-xs text-neutral-400">Do PIB</p></div>
+      <div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><div class="text-3xl font-bold text-emerald-400 mb-1">52%</div><p class="text-xs text-neutral-400">Dos empregos formais</p></div>
+    </div>
+
+    <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
+      <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">📈</span> Estudo Nautis 2026 — base 100+ PMEs (R$ 5M-200M)</h3>
+      <ul class="space-y-2 text-neutral-300">
+        <li><strong>100%</strong> já tentaram IA</li>
+        <li><strong>9%</strong> têm ROI mensurado</li>
+        <li><strong>61%</strong> contrataram plataforma antes de ter processo definido</li>
+        <li><strong>83%</strong> dessas plataformas viraram prateleira</li>
+        <li><strong>3,2 meses</strong> de payback médio em projetos bem desenhados</li>
+      </ul>
+    </div>
+
+    <p class="text-neutral-300 leading-relaxed">A pesquisa do IBGE (PINTEC Semestral 2024) confirma do outro lado. Entre as barreiras à adoção tecnológica, a escassez de mão de obra qualificada cresceu de 46,4% para 60,6% entre 2022 e 2024 — <strong class="text-emerald-400">salto de 14 pontos percentuais em dois anos</strong>, o maior crescimento entre todas as barreiras documentadas. Custo cresceu 4 pontos no mesmo período. <strong class="text-emerald-400">A barreira humana cresce três vezes mais rápido que a de custo.</strong></p>
+  </section>
+
+  <section id="topico-2" class="mb-16">
+    <div class="flex items-center space-x-4 mb-6">
+      <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">2</span>
+      <h2 class="text-2xl font-bold">📅 A janela temporal 2026 a 2030</h2>
+    </div>
+
+    <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6 mb-6">
+      <h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center"><span class="mr-2">📊</span> Projeções do mercado brasileiro de IA</h3>
+      <ul class="space-y-2 text-neutral-300">
+        <li><strong>US$ 2,85 bilhões em 2025</strong>, CAGR de 33,3% até 2031 (Statista)</li>
+        <li><strong>US$ 99,8 bilhões em 2033</strong>, CAGR de 23% (Grand View Research)</li>
+        <li><strong>87% dos líderes brasileiros</strong> planejam manter ou aumentar investimento em IA em 2025 (Bain & Co)</li>
+      </ul>
+    </div>
+
+    <p class="text-neutral-300 mb-6 leading-relaxed">Mais relevante que o tamanho do bolo é a curva de adoção projetada para PMEs:</p>
+
+    <div class="overflow-x-auto mb-6">
+      <table class="w-full bg-dark-800 rounded-xl border border-dark-600">
+        <thead><tr class="border-b border-dark-600"><th class="text-left p-4 text-sm font-semibold text-neutral-300">Indicador</th><th class="text-center p-4 text-sm font-semibold text-emerald-400">2024</th><th class="text-center p-4 text-sm font-semibold text-emerald-400">2025</th><th class="text-center p-4 text-sm font-semibold text-emerald-400">2026</th><th class="text-center p-4 text-sm font-semibold text-emerald-400">2027 (est.)</th></tr></thead>
+        <tbody>
+          <tr class="border-b border-dark-700"><td class="p-4 text-sm text-neutral-300">Empresas com projeto de IA ativo</td><td class="text-center p-4 text-sm">12%</td><td class="text-center p-4 text-sm">25%</td><td class="text-center p-4 text-sm">~40%</td><td class="text-center p-4 text-sm font-bold text-emerald-400">~55%</td></tr>
+          <tr><td class="p-4 text-sm text-neutral-300">Pequenas empresas usando IA</td><td class="text-center p-4 text-sm">10%</td><td class="text-center p-4 text-sm">~18%</td><td class="text-center p-4 text-sm">~28%</td><td class="text-center p-4 text-sm font-bold text-emerald-400">~40%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-neutral-300 mb-6 leading-relaxed">Se a projeção se confirmar, em três anos o número de pequenas empresas usando IA <strong class="text-emerald-400">quadruplica</strong>. Cada uma dessas empresas precisará de alguém que implemente — porque, como mostra a Nautis, comprar plataforma sem processo definido não funciona em 83% dos casos.</p>
+
+    <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
+      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">⏱️</span> A janela competitiva é de 5 a 7 anos</h3>
+      <p class="text-neutral-300 mb-3">Em 2027-2028, plataformas como Omie já lançaram integração nativa com WhatsApp e IA. Em 2028-2030, o "agente de WhatsApp para PME" vira commodity como CRM virou em 2015.</p>
+      <p class="text-neutral-400 text-sm">A partir daí, ainda haverá demanda — mas o ticket cai e a margem fica em manutenção, treinamento e diagnóstico, não em implementação. <strong>Quem entra agora ocupa a posição de implementador de método.</strong> Quem entra em 2029 entra como mais um vendedor de agente.</p>
+    </div>
+  </section>
+
+  <section id="topico-3" class="mb-16">
+    <div class="flex items-center space-x-4 mb-6">
+      <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">3</span>
+      <h2 class="text-2xl font-bold">🌀 O paradoxo da adoção</h2>
+    </div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">A pesquisa Microsoft/Edelman 2024 mostra que 75% dos pequenos empresários estão otimistas com IA. 77% dos líderes observam melhoria na qualidade do trabalho. 76% relatam aumento de produtividade. <strong class="text-emerald-400">E ainda assim</strong>, MIT/NANDA (2025) registra que 95% das implementações de IA generativa não geram retorno financeiro.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
+        <h4 class="font-bold text-emerald-400 mb-4">↑ Intenção alta</h4>
+        <ul class="space-y-2 text-sm text-neutral-300">
+          <li>75% otimismo com IA (Microsoft/Edelman)</li>
+          <li>77% percebem melhoria de qualidade</li>
+          <li>76% relatam aumento de produtividade</li>
+          <li>73% investindo ou planejando investir</li>
+        </ul>
+      </div>
+      <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
+        <h4 class="font-bold text-red-400 mb-4">↓ Execução péssima</h4>
+        <ul class="space-y-2 text-sm text-neutral-300">
+          <li>95% de pilotos sem ROI (MIT/NANDA)</li>
+          <li>30% abandonados após PoC (Gartner)</li>
+          <li>80,3% sem clareza de caso de uso (RAND)</li>
+          <li>78% das falhas são humanas (McKinsey)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
+      <h3 class="text-lg font-semibold text-blue-400 mb-4 flex items-center"><span class="mr-2">🔍</span> As 6 causas raiz das falhas (Gartner, MIT, RAND, IBM, McKinsey)</h3>
+      <ol class="space-y-3 text-neutral-300 list-decimal list-inside">
+        <li><strong>Dados de baixa qualidade ou inexistentes</strong> — 85% das falhas têm dados como fator crítico</li>
+        <li><strong>Ausência de problema de negócio definido</strong> — 80,3% dos projetos sem clareza no caso de uso</li>
+        <li><strong>Resistência cultural não gerenciada</strong> — 70% das falhas têm resistência relevante</li>
+        <li><strong>Projeto que não sai do piloto</strong> — 95% dos pilotos corporativos falham (ServicePath)</li>
+        <li><strong>Métricas de sucesso não definidas antes</strong> — "drift" documentado pela Deloitte 2026</li>
+        <li><strong>Dependência total do implementador externo</strong> — sem responsável interno, projeto quebra</li>
+      </ol>
+    </div>
+
+    <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6">
+      <h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center"><span class="mr-2">✓</span> Cada falha é tratável pelo método DPIA</h3>
+      <ul class="space-y-2 text-neutral-300 text-sm">
+        <li>• Diagnóstico antes da ferramenta → resolve causa #2</li>
+        <li>• Baseline assinado → resolve causa #5</li>
+        <li>• Champion interno e train-the-trainer → resolvem #3 e #6</li>
+        <li>• Escopo pequeno + medição 30/60/90 dias → resolve #4</li>
+        <li>• Mapeamento e estruturação de dados → resolve #1</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="topico-4" class="mb-16">
+    <div class="flex items-center space-x-4 mb-6">
+      <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">4</span>
+      <h2 class="text-2xl font-bold">🇧🇷 A particularidade brasileira</h2>
+    </div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">O mercado brasileiro de IA para PME tem características que <strong class="text-emerald-400">nenhum outro país replica</strong>. Cinco delas formam barreira de entrada defensiva para o implementador local.</p>
+
+    <div class="space-y-6 mb-6">
+      <div class="flex items-start space-x-4">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
+          <h4 class="font-semibold mb-2">📱 WhatsApp como infraestrutura crítica</h4>
+          <p class="text-neutral-300 text-sm">Brasil é o 2º maior mercado de WhatsApp no mundo. Para PMEs, não é canal complementar — é o canal principal. <strong>WhatsApp está presente em 71% dos projetos de IA em produção em PMEs brasileiras</strong> (Nautis 2026). Plataformas americanas sem suporte nativo a WhatsApp Business API não funcionam aqui.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
+          <h4 class="font-semibold mb-2">💸 PIX como pagamento instantâneo</h4>
+          <p class="text-neutral-300 text-sm">Operacional desde novembro de 2020, criou base para automação de cobrança com confirmação em tempo real, integração de pagamento dentro do fluxo do WhatsApp, redução de inadimplência com notificações automáticas. Nenhum país da AmLat tem equivalente.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
+          <h4 class="font-semibold mb-2">🧾 NF-e como dado estruturado obrigatório</h4>
+          <p class="text-neutral-300 text-sm">Toda transação comercial gera dado padronizado na SEFAZ. ERPs brasileiros são construídos em torno disso. Caso SocialHub (65 varejistas): integração WhatsApp + Bling + NF-e reduziu o tempo entre venda e emissão da nota de <strong>4 horas para 2 minutos</strong>.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">4</span></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
+          <h4 class="font-semibold mb-2">📦 ERPs locais dominantes</h4>
+          <p class="text-neutral-300 text-sm">O mercado PME é dominado por <strong>Bling, Omie, Conta Azul, Tiny</strong> — não SAP, não Salesforce. APIs próprias, webhooks próprios. Implementador americano não atravessa essa barreira sem 6-12 meses de aprendizado.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">5</span></div>
+        <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
+          <h4 class="font-semibold mb-2">⚖️ LGPD com regime simplificado (ANPD 2/2022)</h4>
+          <p class="text-neutral-300 text-sm">Microempresas e EPPs têm dispensa de DPO, registro enxuto, prazos dobrados. O implementador que sabe dizer "sua empresa é microempresa, não precisa de DPO, vamos fazer um RIPD enxuto" vira parceiro de conformidade.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
+      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🛡️</span> Sua vantagem defensiva</h3>
+      <p class="text-neutral-300">O profissional formado para o Brasil-real (WhatsApp + PIX + NF-e + Bling/Omie/Conta Azul + LGPD-PME) tem mercado defensivo contra concorrência estrangeira <strong>e</strong> contra concorrência genérica nacional. Os 5 fatores combinados criam barreira de 6-12 meses para quem chega de fora.</p>
+    </div>
+  </section>
+
+  <section id="topico-5" class="mb-16">
+    <div class="flex items-center space-x-4 mb-6">
+      <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">5</span>
+      <h2 class="text-2xl font-bold">🏷️ Concorrência: 25 iniciativas, 4 baldes, nenhum cobre</h2>
+    </div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">O cargo de implementador de IA para PME brasileira não tem nome consolidado no mercado. As formações disponíveis em 2026 se dividem em quatro baldes, conforme mapeamento de 25 iniciativas concorrentes:</p>
+
+    <div class="overflow-x-auto mb-6">
+      <table class="w-full bg-dark-800 rounded-xl border border-dark-600">
+        <thead><tr class="border-b border-dark-600"><th class="text-left p-4 text-sm font-semibold text-emerald-400">Balde</th><th class="text-left p-4 text-sm font-semibold text-neutral-300">Exemplos</th><th class="text-left p-4 text-sm font-semibold text-neutral-300">Forma</th><th class="text-left p-4 text-sm font-semibold text-red-400">O que falta</th></tr></thead>
+        <tbody class="text-sm">
+          <tr class="border-b border-dark-700"><td class="p-4 font-semibold">Universidades técnicas</td><td class="p-4 text-neutral-300">FIAP, Tera, Alura, PUC, Senac</td><td class="p-4 text-neutral-300">Engenheiro tech company</td><td class="p-4 text-neutral-400">Foco PME, método, comunidade</td></tr>
+          <tr class="border-b border-dark-700"><td class="p-4 font-semibold">"Ganhe R$ 10k"</td><td class="p-4 text-neutral-300">Hashtag, Escola de Automação</td><td class="p-4 text-neutral-300">Ferramenta sem método</td><td class="p-4 text-neutral-400">Diagnóstico, processo, ética</td></tr>
+          <tr class="border-b border-dark-700"><td class="p-4 font-semibold">Para empresários</td><td class="p-4 text-neutral-300">G4, ESPM, FDC</td><td class="p-4 text-neutral-300">Estratégia para quem contrata</td><td class="p-4 text-neutral-400">Operação para quem implementa</td></tr>
+          <tr><td class="p-4 font-semibold">Institucionais grátis</td><td class="p-4 text-neutral-300">Sebrae, Microsoft, Bradesco, AWS</td><td class="p-4 text-neutral-300">Introdução, fundamentos</td><td class="p-4 text-neutral-400">Método aplicável, profundidade</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6">
+      <h3 class="text-lg font-semibold text-emerald-400 mb-3 flex items-center"><span class="mr-2">🎯</span> O Profissional 2027 ocupa o vão</h3>
+      <p class="text-neutral-300 mb-3">A defesa do programa é estrutural, não apenas posicional:</p>
+      <ul class="space-y-2 text-neutral-300 text-sm">
+        <li>• <strong>Comunidade longitudinal</strong> (inema.vip, 100 mil ex-SISNEMA) — concorrente pago não replica</li>
+        <li>• <strong>Curadoria de 40 anos de mercado</strong> (Nei Maldaner) — autoridade construída</li>
+        <li>• <strong>Marca pessoal</strong> (500 mil seguidores)</li>
+        <li>• <strong>Gratuidade radical</strong> (não é grátis com upsell — é grátis mesmo)</li>
+        <li>• <strong>Foco em Brasil-real</strong> (clínicas, distribuidoras, contábeis)</li>
+        <li>• <strong>Biblioteca AIOS open source</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="topico-6" class="mb-16">
+    <div class="flex items-center space-x-4 mb-6">
+      <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl">6</span>
+      <h2 class="text-2xl font-bold">💰 Implicações para quem entra agora</h2>
+    </div>
+    <p class="text-neutral-300 mb-6 leading-relaxed">Quem se forma como implementador entre 2026 e 2027 entra em três posições simultâneas:</p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+      <div class="bg-dark-800 rounded-xl border border-emerald-500/30 p-6">
+        <div class="text-emerald-400 text-sm font-semibold mb-2">POSIÇÃO 1</div>
+        <h4 class="font-bold mb-3">PJ consultor solo</h4>
+        <ul class="space-y-2 text-sm text-neutral-300">
+          <li>• R$ 3-8k por diagnóstico</li>
+          <li>• R$ 20-80k por projeto</li>
+          <li>• R$ 800-7k/mês por cliente</li>
+          <li>• 5 clientes recorrentes = R$ 12,5k base</li>
+          <li>• R$ 10k/mês estável em 8-15 meses</li>
+        </ul>
+      </div>
+      <div class="bg-dark-800 rounded-xl border border-emerald-500/30 p-6">
+        <div class="text-emerald-400 text-sm font-semibold mb-2">POSIÇÃO 2</div>
+        <h4 class="font-bold mb-3">CLT em empresa</h4>
+        <ul class="space-y-2 text-sm text-neutral-300">
+          <li>• R$ 10-25k/mês (Glassdoor n8n)</li>
+          <li>• R$ 19,5-27,1k pleno (Robert Half)</li>
+          <li>• R$ 20-30k Solutions Architect</li>
+          <li>• Estabilidade + teto</li>
+          <li>• Sem aprendizado comercial</li>
+        </ul>
+      </div>
+      <div class="bg-dark-800 rounded-xl border border-emerald-500/30 p-6">
+        <div class="text-emerald-400 text-sm font-semibold mb-2">POSIÇÃO 3</div>
+        <h4 class="font-bold mb-3">Consultoria pequena 3-5p</h4>
+        <ul class="space-y-2 text-sm text-neutral-300">
+          <li>• R$ 1,5-2,5M/ano faturamento</li>
+          <li>• Margem 25-40%</li>
+          <li>• Modelo tripartite escalado</li>
+          <li>• Verticalizada por setor</li>
+          <li>• Indicação como motor</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
+      <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">📌</span> Demanda concentrada em 5 setores</h3>
+      <p class="text-neutral-300 mb-3">80% da demanda atual está em (Nautis 2026):</p>
+      <ul class="space-y-1 text-neutral-300 text-sm">
+        <li>• Varejo e e-commerce — 22%</li>
+        <li>• Distribuidoras — 18%</li>
+        <li>• Clínicas e consultórios — 14%</li>
+        <li>• Contábeis e jurídicos — 14%</li>
+        <li>• Imobiliárias — 12%</li>
+      </ul>
+    </div>
+
+    <p class="text-neutral-300 leading-relaxed">A tese, em uma frase, é simples. <strong class="text-emerald-400">O Brasil tem dor real, dinheiro disponível, ecossistema técnico específico e nenhum cargo formalizado para implementar IA em PMEs com método.</strong> Os próximos 24 meses definem quem ocupa esse espaço. O Profissional 2027 forma quem quer ocupar.</p>
+  </section>
+
+  <section class="mb-12">
+    <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
+      <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📊</span> Resumo do módulo</h2>
+      <div class="space-y-4 mb-8">
+        <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">21,7M PMEs · 10% de adoção · gap 4:1 com grandes.</strong><span class="text-neutral-400"> O mercado endereçável é gigantesco e está estagnado por falta de método.</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Janela 2026-2030.</strong><span class="text-neutral-400"> CAGR 33%. Adoção em pequenas empresas quadruplica em 3 anos. Comoditização após 2028-2030.</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Paradoxo da adoção.</strong><span class="text-neutral-400"> 75% otimismo vs 95% sem ROI. 6 causas raiz — todas tratáveis pelo método DPIA.</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">5 fatores brasileiros = vantagem defensiva.</strong><span class="text-neutral-400"> WhatsApp · PIX · NF-e · ERPs locais · LGPD-PME. Barreira de 6-12 meses contra concorrência externa.</span></div></div>
+        <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">3 posições de receita, 5 setores de demanda.</strong><span class="text-neutral-400"> PJ solo · CLT · consultoria pequena. Varejo, distribuição, clínicas, contábeis, imobiliárias = 80% da demanda.</span></div></div>
+      </div>
+      <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
+        <h3 class="font-semibold text-emerald-400 mb-2">Próximo módulo:</h3>
+        <p class="text-neutral-300">1.3 — Perfil do profissional · 3 competências em 1 perfil, hard + soft skills, trajetória 0-24 meses.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="modulo-1-1.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Módulo 1.1 Manifesto</a>
+        <a href="modulo-1-3.html" class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors">Módulo 1.3 Perfil →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Profissional 2027 · <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p></div></footer>
+
+<script>
+const themeToggle=document.getElementById('theme-toggle');const dIcon=document.getElementById('theme-toggle-dark-icon');const lIcon=document.getElementById('theme-toggle-light-icon');const html=document.documentElement;
+if(localStorage.getItem('theme')==='light'||(!localStorage.getItem('theme')&&!html.classList.contains('dark'))){dIcon.classList.remove('hidden');html.classList.remove('dark')}else{lIcon.classList.remove('hidden')}
+themeToggle.addEventListener('click',()=>{dIcon.classList.toggle('hidden');lIcon.classList.toggle('hidden');html.classList.toggle('dark');localStorage.setItem('theme',html.classList.contains('dark')?'dark':'light')});
+</script>
+
+</body></html>

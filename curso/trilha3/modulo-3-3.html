@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>3.3 Construção do playbook | T3 | Profissional 2027</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{900:'#111827',800:'#1f2937',700:'#374151',600:'#4b5563'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#111827}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}
+html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}
+html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) .border-dark-700{border-color:#e5e7eb}
+html:not(.dark) .text-purple-400{color:#7c3aed}html:not(.dark) .bg-purple-500\/20{background-color:rgba(124,58,237,.12)}html:not(.dark) .bg-purple-500\/10{background-color:rgba(124,58,237,.08)}html:not(.dark) .border-purple-500\/30{border-color:rgba(124,58,237,.25)}
+html:not(.dark) .bg-purple-900\/20,html:not(.dark) .bg-purple-900\/30,html:not(.dark) .bg-purple-900\/40{background-color:rgba(124,58,237,.08)}
+html:not(.dark) .hover\:text-purple-400:hover{color:#7c3aed}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(124,58,237,.08)}
+html:not(.dark) .hover\:text-emerald-400:hover{color:#059669}html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(5,150,105,.08)}
+html:not(.dark) .hover\:text-blue-400:hover{color:#2563eb}html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(37,99,235,.08)}
+html:not(.dark) .hover\:text-amber-400:hover{color:#92400e}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(217,119,6,.08)}
+html:not(.dark) .hover\:text-teal-400:hover{color:#0d9488}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(13,148,136,.08)}
+html:not(.dark) .hover\:text-rose-400:hover{color:#9f1239}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(225,29,72,.08)}
+html:not(.dark) .text-emerald-400{color:#059669}html:not(.dark) .bg-emerald-900\/20{background-color:rgba(5,150,105,.08)}html:not(.dark) .border-emerald-500\/30{border-color:rgba(5,150,105,.25)}
+html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-900\/20{background-color:rgba(220,38,38,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(220,38,38,.25)}
+html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .bg-primary\/10{background-color:rgba(161,98,7,.08)}html:not(.dark) .border-primary\/40{border-color:rgba(161,98,7,.25)}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .text-yellow-400{color:#a16207}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}html:not(.dark) .hover\:text-yellow-300:hover{color:#854d0e}
+html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}
+.dark .border-dark-600{border-color:#374151}.dark .divide-dark-600>:not([hidden])~:not([hidden]){border-color:#374151}</style></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300"><span class="text-2xl">🎯</span><span class="font-bold text-lg hidden sm:inline">Profissional 2027</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-1 sm:space-x-2">
+<a href="../trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
+<a href="../trilha2/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Diagnosticar</span></a>
+<a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-purple-400 bg-purple-500/10"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Processar</span></a>
+<a href="../trilha4/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Instruir</span></a>
+<a href="../trilha5/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Automatizar</span></a>
+<a href="../trilha6/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Aplicação</span></a>
+<button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2"><svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button>
+</div></div></div></nav>
+
+<nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4"><div class="flex items-center space-x-2 text-sm text-neutral-400"><a href="../../index.html" class="hover:text-purple-400">Início</a><span>/</span><a href="index.html" class="hover:text-purple-400">Trilha 3</a><span>/</span><span class="text-purple-400">Módulo 3.3</span></div></nav>
+
+<header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MÓDULO 3.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">📘 Construção do playbook</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Transformar processo + RTs em playbook estruturado de 6 campos. Cenários happy + exceções, few-shot real do histórico, tom de voz, revisão viva.</p>
+<div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl"><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">50</div><div class="text-xs text-neutral-400">Minutos</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Aplic.</div><div class="text-xs text-neutral-400">Nível</div></div><div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Doc</div><div class="text-xs text-neutral-400">Tipo</div></div></div></div></header>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+<section id="topico-1" class="mb-16"><div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">1</span><h2 class="text-2xl font-bold">🧩 Estrutura de 6 campos</h2></div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Cada cenário do agente vira <strong class="text-purple-400">uma linha do playbook</strong> com 6 campos. Estruturado vira mapa-fonte do system prompt da fase I.</p>
+<div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6"><h3 class="text-lg font-semibold text-purple-400 mb-4">Os 6 campos por cenário</h3><ul class="space-y-2 text-neutral-300 text-sm"><li>• <strong>Entrada:</strong> o que o cliente disse / ação que dispara</li><li>• <strong>Processo:</strong> passos que o agente executa</li><li>• <strong>Critério:</strong> quando esse cenário aplica</li><li>• <strong>Saída:</strong> resposta padrão do agente</li><li>• <strong>Exemplos:</strong> 3-5 reais do histórico</li><li>• <strong>Regras:</strong> RT-XX aplicáveis</li></ul></div>
+<div class="bg-primary/10 rounded-xl border border-primary/40 p-6"><h3 class="text-lg font-semibold text-primary mb-3">💡 Por que estruturado</h3><p class="text-neutral-300 text-sm">Playbook narrativo vira monólogo. Estruturado em planilha, cada linha é um cenário. Você importa direto pro system prompt na fase I.</p></div></section>
+
+<section id="topico-2" class="mb-16"><div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span><h2 class="text-2xl font-bold">🎯 Cenários do caminho feliz — 80%</h2></div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Lista <strong class="text-purple-400">8-15 cenários</strong> que cobrem 80% do volume. Ordenados por frequência. Cada um vira linha do playbook.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6"><h4 class="font-bold text-emerald-400 mb-3">✓ Cenário bem definido</h4><ul class="space-y-2 text-sm text-neutral-300"><li>• "Cliente pede cotação de SKU em estoque"</li><li>• "Cliente confirma pedido via PIX"</li><li>• "Cliente novo solicita catálogo"</li><li>• "Cliente pergunta prazo de entrega"</li></ul></div>
+<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6"><h4 class="font-bold text-red-400 mb-3">✗ Cenário mal definido</h4><ul class="space-y-2 text-sm text-neutral-300"><li>• "Cliente faz pedido" (vago)</li><li>• "Atendimento" (genérico)</li><li>• "Diversos" (catch-all)</li><li>• "Outros casos" (preguiça)</li></ul></div>
+</div>
+<div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6"><h3 class="text-lg font-semibold text-purple-400 mb-3">📊 Pareto: 80/20</h3><p class="text-neutral-300 text-sm">8-15 cenários cobrem 80% do volume. Tentar cobrir 100% torna playbook intratável e bateria de teste infinita. <strong>80% é alcançável e suficiente pro MVP.</strong></p></div></section>
+
+<section id="topico-3" class="mb-16"><div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span><h2 class="text-2xl font-bold">⚠️ Cenários de exceção — 20% que escalam</h2></div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Os 20% restantes <strong class="text-purple-400">NÃO viram resposta do agente</strong> — viram gatilho de escalação. Lista explícita com pra quem encaminhar.</p>
+<div class="space-y-3 mb-6">
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><h4 class="font-semibold text-purple-400 mb-1">🚨 Pedido grande (&gt; R$ 5k)</h4><p class="text-xs text-neutral-400">Gatilho: valor &gt; threshold. Encaminhar: gerente comercial. Mensagem padrão: "Estou encaminhando para nosso gerente, ele retorna em até 30 min."</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><h4 class="font-semibold text-purple-400 mb-1">💔 Reclamação séria</h4><p class="text-xs text-neutral-400">Gatilho: palavras "cancelar", "reclamar", "processo", "tribunal". Encaminhar: sócio. Resposta: "Levei sua mensagem para a direção, retorno em 2h útil."</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><h4 class="font-semibold text-purple-400 mb-1">❌ Pedido fora de escopo</h4><p class="text-xs text-neutral-400">Gatilho: produto que empresa não vende. Resposta: "Esse produto não faz parte do nosso catálogo atual. Quer que eu te recomende algum similar?"</p></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5"><h4 class="font-semibold text-purple-400 mb-1">⚡ Baixa confiança do modelo</h4><p class="text-xs text-neutral-400">Gatilho: agente não tem certeza. Resposta: "Deixa eu verificar essa informação com o time, retorno em poucos minutos." + escala.</p></div>
+</div>
+<div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6"><h3 class="text-lg font-semibold text-blue-400 mb-3">🎚️ HITL definido aqui</h3><p class="text-neutral-300 text-sm">Cada exceção tem nível HITL (N1-N4) atribuído. Aqui se define se IA decide e humano audita, ou se humano decide e IA propõe. Detalhes em T3.4.</p></div></section>
+
+<section id="topico-4" class="mb-16"><div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span><h2 class="text-2xl font-bold">📚 Exemplos few-shot por cenário</h2></div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Para cada cenário, <strong class="text-purple-400">3-5 exemplos REAIS</strong> do histórico WhatsApp com entrada do cliente + resposta ideal do operador.</p>
+<div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6"><h3 class="text-lg font-semibold text-purple-400 mb-3">📖 Exemplo Polaris — Cenário "cotação SKU"</h3><div class="space-y-3 text-sm">
+<div class="bg-dark-700/50 rounded p-3"><strong class="text-blue-400">Cliente:</strong> <span class="text-neutral-300">Bom dia, quanto tá a cerveja Heineken 600ml?</span></div>
+<div class="bg-dark-700/50 rounded p-3"><strong class="text-emerald-400">Resposta:</strong> <span class="text-neutral-300">Bom dia, Sr. José! 🍺 Heineken 600ml está R$ 8,90 unidade ou R$ 213 a caixa com 24. Quer fechar quantidade?</span></div>
+</div></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6"><h4 class="font-bold text-emerald-400 mb-3">✓ Few-shot real anonimizado</h4><ul class="space-y-2 text-sm text-neutral-300"><li>• Extraído do histórico</li><li>• Nomes alterados</li><li>• Captura o tom real</li><li>• Operador valida</li></ul></div>
+<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6"><h4 class="font-bold text-red-400 mb-3">✗ Few-shot inventado</h4><ul class="space-y-2 text-sm text-neutral-300"><li>• Tom corporativo</li><li>• Linguagem da consultoria</li><li>• Sem gírias do setor</li><li>• Vira chatbot genérico</li></ul></div>
+</div>
+<div class="bg-primary/10 rounded-xl border border-primary/40 p-6"><h3 class="text-lg font-semibold text-primary mb-3">💡 Few-shot é fine-tuning sem fine-tune</h3><p class="text-neutral-300 text-sm">Exemplos reais carregam tom, vocabulário, ritmo da empresa. Agente "aprende" sem precisar treinar modelo. <strong>É o 2º maior alavanca de qualidade depois do RAG.</strong></p></div></section>
+
+<section id="topico-5" class="mb-16"><div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span><h2 class="text-2xl font-bold">🗣️ Tom de voz e persona</h2></div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Define como o agente fala: <strong class="text-purple-400">tom (formal/casual), uso de emoji, gírias permitidas, saudação, tratamento (você/senhor), nome do agente</strong>.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div class="bg-dark-800 rounded-xl border border-purple-500/30 p-6"><h4 class="font-bold text-purple-400 mb-3">Exemplo Polaris (distribuidora)</h4><ul class="space-y-1 text-sm text-neutral-300"><li>• Nome: "Polari"</li><li>• Tom: casual brasileiro</li><li>• Emoji: 1-2 por mensagem (🍺 🍻 ✅)</li><li>• Tratamento: "você" (não "senhor")</li><li>• Gírias OK: "fechou", "blz", "valeu"</li><li>• Saudação: "Bom dia, [nome]!" antes 12h</li></ul></div>
+<div class="bg-dark-800 rounded-xl border border-purple-500/30 p-6"><h4 class="font-bold text-purple-400 mb-3">Exemplo Contábil (escritório formal)</h4><ul class="space-y-1 text-sm text-neutral-300"><li>• Nome: "Beatriz" (humanizado)</li><li>• Tom: formal-amigável</li><li>• Emoji: nenhum ou só ✅</li><li>• Tratamento: "Sr./Sra. [sobrenome]"</li><li>• Gírias: nenhuma</li><li>• Saudação: "Prezado(a) Sr./Sra. [Nome]"</li></ul></div>
+</div>
+<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6"><h3 class="text-lg font-semibold text-red-400 mb-3">⚠️ Tom errado quebra confiança</h3><p class="text-neutral-300 text-sm">Cliente Polaris recebendo mensagem formal acha que é golpe. Cliente contábil recebendo "blz, fechou!" perde confiança. <strong>Tom é validado por amostragem real com o operador.</strong></p></div></section>
+
+<section id="topico-6" class="mb-16"><div class="flex items-center space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">6</span><h2 class="text-2xl font-bold">🔁 Revisão viva, não SOP</h2></div>
+<p class="text-neutral-300 mb-6 leading-relaxed">Playbook <strong class="text-purple-400">não é SOP fechado</strong>. É documento vivo que atualiza com aprendizado pós-deploy. Versionar cada atualização.</p>
+<div class="space-y-4 mb-6">
+<div class="flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex-shrink-0">1</span><div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Versionamento semver</h4><p class="text-sm text-neutral-300">v1.0 inicial → v1.1 ajustes pós-validação → v2.0 após 30 dias com aprendizado real. Cada versão tem changelog.</p></div></div>
+<div class="flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex-shrink-0">2</span><div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Revisão mensal na manutenção</h4><p class="text-sm text-neutral-300">Cada visita mensal de manutenção: 30 min lendo overrides do mês, identificando novas RTs, atualizando cenários. Sai com v.X+1.</p></div></div>
+<div class="flex items-start space-x-4"><span class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex-shrink-0">3</span><div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Changelog explícito</h4><p class="text-sm text-neutral-300">"v1.3: adicionada RT-19 (cliente Glória aceita pedido por SMS). Removida RT-04 (regra obsoleta após mudança de tabela)."</p></div></div>
+</div>
+<div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6"><h3 class="text-lg font-semibold text-purple-400 mb-3">🔄 Realidade muda</h3><p class="text-neutral-300 text-sm">Cliente novo aparece. Regra tácita nova surge. Lei muda. Mercado muda. Playbook precisa absorver — caso contrário envelhece e agente vira datado.</p></div></section>
+
+<section class="mb-12"><div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📘</span> Resumo do módulo</h2>
+<div class="space-y-4 mb-8">
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">6 campos por cenário.</strong><span class="text-neutral-400"> Entrada · processo · critério · saída · exemplos · regras. Estruturado vira system prompt na fase I.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">8-15 cenários happy (80% do volume).</strong><span class="text-neutral-400"> Pareto. Bem definidos, não vagos.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">20% restantes = exceções com escalação.</strong><span class="text-neutral-400"> Pedido grande, reclamação, fora de escopo, baixa confiança. Lista explícita.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Few-shot real, 3-5 por cenário.</strong><span class="text-neutral-400"> Extraído do histórico, anonimizado, validado por operador. Fine-tuning sem fine-tune.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Tom e persona consistentes.</strong><span class="text-neutral-400"> Nome do agente · emoji · tratamento · gírias. Validado por amostragem real.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Playbook é vivo, versionado.</strong><span class="text-neutral-400"> v1 → v2 → v.X+1. Revisão mensal. Changelog explícito.</span></div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">Próximo módulo:</h3><p class="text-neutral-300">3.4 — Design do fluxo com IA · onde IA entra · matriz HITL em 4 níveis · gatilhos de escalonamento · plano de integrações.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a href="modulo-3-2.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Módulo 3.2</a><a href="modulo-3-4.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors">Módulo 3.4 →</a></div>
+</div></section>
+
+</main>
+
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Profissional 2027 · <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p></div></footer>
+
+<script>const themeToggle=document.getElementById('theme-toggle');const dIcon=document.getElementById('theme-toggle-dark-icon');const lIcon=document.getElementById('theme-toggle-light-icon');const html=document.documentElement;
+if(localStorage.getItem('theme')==='light'||(!localStorage.getItem('theme')&&!html.classList.contains('dark'))){dIcon.classList.remove('hidden');html.classList.remove('dark')}else{lIcon.classList.remove('hidden')}
+themeToggle.addEventListener('click',()=>{dIcon.classList.toggle('hidden');lIcon.classList.toggle('hidden');html.classList.toggle('dark');localStorage.setItem('theme',html.classList.contains('dark')?'dark':'light')});</script>
+</body></html>

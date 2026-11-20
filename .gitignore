@@ -1,0 +1,14 @@
+.claude/
+PLANO.md
+DECISOES.md
+conteudo/
+.DS_Store
+*.swp
+*.swo
+*~
+node_modules/
+.env
+.env.local
+site/
+__pycache__/
+*.pyc

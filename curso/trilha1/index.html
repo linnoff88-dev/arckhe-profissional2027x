@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha 1 — Fundamentos | Profissional 2027</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{900:'#111827',800:'#1f2937',700:'#374151',600:'#4b5563'}}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:'Inter',sans-serif}.dark body{background-color:#111827}
+    .topic-explanation{display:none}.topic-explanation.active{display:block}
+    html:not(.dark) body{background-color:#f8fafc}
+    html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-800{background-color:#f9fafb}
+    html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}
+    html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}
+    html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}
+    html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) .border-dark-700{border-color:#e5e7eb}
+    html:not(.dark) .text-emerald-400{color:#059669}
+    html:not(.dark) .bg-emerald-500\/20{background-color:rgba(5,150,105,.12)}
+    html:not(.dark) .bg-emerald-500\/10{background-color:rgba(5,150,105,.08)}
+    html:not(.dark) .border-emerald-500\/30{border-color:rgba(5,150,105,.25)}
+    html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(5,150,105,.08)}
+    html:not(.dark) .hover\:bg-emerald-500\/30:hover{background-color:rgba(5,150,105,.18)}
+    html:not(.dark) .hover\:text-emerald-400:hover{color:#059669}
+    html:not(.dark) .hover\:text-blue-400:hover{color:#2563eb}html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(37,99,235,.08)}
+    html:not(.dark) .hover\:text-purple-400:hover{color:#7c3aed}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(124,58,237,.08)}
+    html:not(.dark) .hover\:text-amber-400:hover{color:#92400e}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(217,119,6,.08)}
+    html:not(.dark) .hover\:text-teal-400:hover{color:#0d9488}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(13,148,136,.08)}
+    html:not(.dark) .hover\:text-rose-400:hover{color:#9f1239}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(225,29,72,.08)}
+    html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+    html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .bg-primary\/10{background-color:rgba(161,98,7,.08)}
+    html:not(.dark) .border-primary\/40{border-color:rgba(161,98,7,.25)}html:not(.dark) .text-sky-400{color:#0369a1}
+    html:not(.dark) .text-yellow-400{color:#a16207}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+    html:not(.dark) .hover\:text-yellow-300:hover{color:#854d0e}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}
+    .dark .border-dark-600{border-color:#374151}
+    .dark .divide-dark-600>:not([hidden])~:not([hidden]){border-color:#374151}
+  </style>
+</head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+    <div class="flex items-center space-x-4">
+      <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
+        <span class="text-2xl">🎯</span><span class="font-bold text-lg hidden sm:inline">Profissional 2027</span>
+      </a>
+      <span class="text-neutral-600">|</span>
+      <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+    </div>
+    <div class="flex items-center space-x-1 sm:space-x-2">
+      <a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
+      <a href="../trilha2/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Diagnosticar</span></a>
+      <a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Processar</span></a>
+      <a href="../trilha4/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Instruir</span></a>
+      <a href="../trilha5/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Automatizar</span></a>
+      <a href="../trilha6/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Aplicação</span></a>
+      <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+  </div></div>
+</nav>
+
+<header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">TRILHA 1</span>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">🧭 Fundamentos</h1>
+    <p class="text-lg text-neutral-400 max-w-3xl">Por que esse profissional precisa existir, qual o mercado real, e o que se está pedindo de você. A primeira trilha não ensina ferramenta — ensina a tese inteira do programa.</p>
+    <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Módulos</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">36</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~4h</div><div class="text-xs text-neutral-400">Duração</div></div>
+      <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Base</div><div class="text-xs text-neutral-400">Nível</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-6">Mapa da trilha</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="#modulo-1-1" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.1</span><span class="text-xs text-neutral-500">~25 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">📜 Manifesto</h3>
+        <p class="text-xs text-neutral-400">Por que um novo profissional</p>
+      </a>
+      <a href="#modulo-1-2" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.2</span><span class="text-xs text-neutral-500">~40 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">📊 Tese de mercado</h3>
+        <p class="text-xs text-neutral-400">21,7M PMEs, 10% de adoção</p>
+      </a>
+      <a href="#modulo-1-3" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.3</span><span class="text-xs text-neutral-500">~30 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">👤 Perfil do profissional</h3>
+        <p class="text-xs text-neutral-400">Diagnostica, configura, treina</p>
+      </a>
+      <a href="#modulo-1-4" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.4</span><span class="text-xs text-neutral-500">~30 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">🎯 A oportunidade</h3>
+        <p class="text-xs text-neutral-400">Janela de 5 a 7 anos</p>
+      </a>
+      <a href="#modulo-1-5" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.5</span><span class="text-xs text-neutral-500">~20 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">🆓 Por que gratuito</h3>
+        <p class="text-xs text-neutral-400">Aluno não é o produto</p>
+      </a>
+      <a href="#modulo-1-6" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+        <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.6</span><span class="text-xs text-neutral-500">~25 min</span></div>
+        <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">🗺️ Como funciona</h3>
+        <p class="text-xs text-neutral-400">10-12 semanas, 1 PME real</p>
+      </a>
+    </div>
+  </section>
+
+  <h2 class="text-2xl font-bold mb-6">Conteúdo detalhado</h2>
+
+  <!-- MODULO 1.1 -->
+  <div id="modulo-1-1" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.1</span><span class="text-xs text-neutral-500">~25 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">📜 Manifesto</h3>
+      <p class="text-neutral-400 text-sm">A virada já aconteceu. O Brasil precisa de implementador, não de mais vendedor de ferramenta.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+          <span class="text-lg">⚡</span>
+          <div><span class="font-medium">A virada já aconteceu</span><span class="text-neutral-500 text-sm ml-2">- IA virou linha de orçamento</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">A IA saiu do laboratório. 100% das PMEs brasileiras pesquisadas já tentaram usar IA. Mas só 9% medem retorno.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A demanda não é por mais ferramenta. É por quem implemente com método. Quem entende isso ocupa o mercado.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">100% tentativa · 9% ROI · 83% prateleira · escassez de mão de obra é a barreira que mais cresce.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+          <span class="text-lg">🏆</span>
+          <div><span class="font-medium">Quem ganha e quem perde</span><span class="text-neutral-500 text-sm ml-2">- Empresas que encontram quem implementa</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Ganham as PMEs que acham implementador real. Perdem as que compram plataforma sem processo.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Define o lado da curva que você quer estar — implementador real ou "vendedor de ChatGPT".</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">50-100k implementadores faltam · oferta atual &lt; 10% da demanda · gap 4:1 entre grande e pequena empresa.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+          <span class="text-lg">🛠️</span>
+          <div><span class="font-medium">Ferramenta sozinha não resolve</span><span class="text-neutral-500 text-sm ml-2">- Joinville, Curitiba, São Paulo</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Distribuidora, clínica, contábil — em nenhum caso a falta é ChatGPT. É processo não mapeado, gargalo não medido.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Reorienta a conversa com cliente: do "qual ferramenta?" para "qual processo dói mais agora?".</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Ferramenta é commodity · processo é o ativo · diagnóstico antes de implementação.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+          <span class="text-lg">🧬</span>
+          <div><span class="font-medium">Por que precisa de um profissional novo</span><span class="text-neutral-500 text-sm ml-2">- Nenhum cargo existente cobre</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Engenheiro de IA forma para FAANG. Cientista de dados constrói modelo do zero. Prompt engineer não opera n8n. Nenhum atravessa as 3 competências juntas.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o argumento de posicionamento na hora de vender — você é o profissional que faltava, não um a mais.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Diagnóstico de processo + stack composable + treinamento de equipe — três competências em um perfil.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+          <span class="text-lg">⚙️</span>
+          <div><span class="font-medium">O que esse profissional faz</span><span class="text-neutral-500 text-sm ml-2">- Da entrada à manutenção mensal</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Entra na PME, pergunta pelo processo, mede tempo, entrega diagnóstico pago com baseline assinado. Implementa em 30-90 dias. Mantém mensalmente.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o "filme" da operação — o que você vai estar fazendo ao final das 12 semanas.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Diagnóstico pago · piloto 30-90 dias · 3-5 clientes em manutenção em 6 meses · R$ 10-25k/mês estável.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+          <span class="text-lg">🚪</span>
+          <div><span class="font-medium">Chamada à ação</span><span class="text-neutral-500 text-sm ml-2">- A pista de pouso é curta</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">8-10h/semana por 10-12 semanas. Entrega final: 1 diagnóstico pago + 1 piloto em PME real. Só isso certifica.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Define o contrato implícito: você estuda, executa, e certifica via prática real. Sem prova, sem mensalidade, sem upsell.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Janela 5-7 anos · método ≠ ferramenta · comunidade longitudinal · entrega real obriga a aprendizagem.</p></div>
+        </div></div>
+      </div>
+
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-1-1')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-1-1.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 1.2 -->
+  <div id="modulo-1-2" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.2</span><span class="text-xs text-neutral-500">~40 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">📊 Tese de mercado</h3>
+      <p class="text-neutral-400 text-sm">O fato bruto: 21,7M PMEs, 10% de adoção, gap 4:1 com grandes. A janela 2026-2030.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+          <span class="text-lg">🧱</span>
+          <div><span class="font-medium">O fato bruto</span><span class="text-neutral-500 text-sm ml-2">- 21,7M PMEs · 99% das empresas · 27% do PIB</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">21,7 milhões de pequenos negócios ativos no Brasil. MEI + ME + EPP = 99% das empresas, 27% do PIB, 52% dos empregos formais privados (Sebrae/IBGE).</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o tamanho do mercado endereçável. Sem entender o universo, você não dimensiona oportunidade nem precificação.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Universo PME · 10% de adoção real (Cetic) · gap 4:1 vs grandes · estagnação 2021-2024.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+          <span class="text-lg">📅</span>
+          <div><span class="font-medium">A janela 2026-2030</span><span class="text-neutral-500 text-sm ml-2">- CAGR 33%, comoditização em 2028-2030</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Mercado brasileiro de IA com CAGR 33% (Statista). Adoção em pequenas empresas projetada: 10% (2024) → 40% (2027). Comoditização do "agente de WhatsApp" entre 2028-2030.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Define a urgência da janela. Quem entra agora pega curva ascendente; quem entra em 2029 disputa ticket baixo.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">CAGR 33% · curva 10→40% em 3 anos · comoditização CRM-like · janela competitiva 5-7 anos.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+          <span class="text-lg">🌀</span>
+          <div><span class="font-medium">Paradoxo da adoção</span><span class="text-neutral-500 text-sm ml-2">- 75% otimistas, 95% sem ROI</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">75% otimismo (Microsoft/Edelman) vs 95% das implementações de GenAI sem ROI (MIT/NANDA). 80,3% dos projetos sem clareza de caso de uso (RAND).</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a dor do cliente — ele já tentou, falhou, está cético. Sua proposta tem que tratar o paradoxo, não fingir que não existe.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Intenção alta · execução péssima · 6 causas raiz tratáveis · 78% das falhas são humanas (McKinsey).</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+          <span class="text-lg">🇧🇷</span>
+          <div><span class="font-medium">A particularidade brasileira</span><span class="text-neutral-500 text-sm ml-2">- WhatsApp, PIX, NF-e, Bling, LGPD-PME</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">5 fatores que blindam o profissional local: WhatsApp (71% dos projetos), PIX, NF-e, ERPs locais (Bling/Omie/Conta Azul), LGPD-PME simplificada.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a barreira de entrada contra concorrência estrangeira e contra "implementador genérico". Sua vantagem defensiva.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">WABA · PIX em fluxo · NF-e como dado estruturado · APIs locais · regime ANPD 2/2022.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+          <span class="text-lg">🏷️</span>
+          <div><span class="font-medium">Concorrência mapeada</span><span class="text-neutral-500 text-sm ml-2">- 25 iniciativas, 4 baldes, nenhuma cobre</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">FIAP/Tera/Alura formam para tech company. Hashtag/Escola de Automação vendem ferramenta. G4/ESPM formam empresário. Sebrae/Microsoft fazem introdução. Nenhum forma implementador PME real.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a defesa do programa contra "ah, mas tem o curso X". Saber em qual balde cada concorrente cai.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">4 baldes · vão de posicionamento · comunidade longitudinal · gratuidade radical.</p></div>
+        </div></div>
+      </div>
+
+      <div class="topic-item">
+        <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+          <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+          <span class="text-lg">💰</span>
+          <div><span class="font-medium">Implicações para quem entra agora</span><span class="text-neutral-500 text-sm ml-2">- 3 posições, faixas reais</span></div>
+        </button>
+        <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+          <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">PJ consultor: R$ 3-8k diagnóstico + R$ 20-80k projeto + R$ 800-7k/mês manutenção. CLT: R$ 10-30k/mês. Consultoria pequena: R$ 1,5-2,5M/ano.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o pricing real do mercado brasileiro. Você usa essas faixas pra precificar e dimensionar plano de carreira.</p></div>
+          <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Modelo tripartite · payback 3,2 meses (Nautis) · 5 clientes recorrentes = R$ 12,5k base.</p></div>
+        </div></div>
+      </div>
+
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-1-2')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-1-2.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 1.3 -->
+  <div id="modulo-1-3" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.3</span><span class="text-xs text-neutral-500">~30 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">👤 Perfil do profissional</h3>
+      <p class="text-neutral-400 text-sm">Quem você se torna ao final do programa. Competências, comportamentos, evidências.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🧩</span><div><span class="font-medium">3 competências em 1 perfil</span><span class="text-neutral-500 text-sm ml-2">- Diagnóstico + stack + treinamento</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Implementador-consultor atravessa três competências: diagnóstico de processo de negócio, configuração de stack composable, treinamento de equipe operacional.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cada competência sozinha não vende. Combinadas, formam o profissional que PME paga.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Híbrido técnico-comercial · operacional · longitudinal (volta mês a mês).</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🔬</span><div><span class="font-medium">Hard skills críticas</span><span class="text-neutral-500 text-sm ml-2">- n8n, prompt, RAG básico, APIs locais</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">n8n self-hosted, Claude/GPT via API, prompt engineering com caching, RAG básico em Supabase, integração WABA + Bling/Omie/Conta Azul + NF-e.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a stack mínima viável. Sem isso você não opera — fica em "vendedor de plataforma".</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Stack composable · APIs brasileiras · prompt como ativo · base de conhecimento por cliente.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🗣️</span><div><span class="font-medium">Soft skills críticas</span><span class="text-neutral-500 text-sm ml-2">- Entrevista, escrita, escuta operacional</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Conduzir entrevista de diagnóstico, escrever relatório que se lê em 15 min, escuta operacional (recepcionista, vendedor, sócio).</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente assina baseline porque entendeu. Se você não comunica em linguagem do dono, não vende.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Pergunta pelo processo · mede antes de propor · linguagem do operador.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🧭</span><div><span class="font-medium">Ética comercial</span><span class="text-neutral-500 text-sm ml-2">- Anti-lock-in, baseline, transparência</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Cláusula de transição sem lock-in · cliente é dono dos prompts e dados · resultados medidos contra baseline assinado · sem upsell encoberto.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o diferencial vs "vendedor de plataforma". Cria reputação que gera indicação espontânea.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Princípio anti-dependência · transparência de pricing · entregáveis pré-acordados.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">📈</span><div><span class="font-medium">Trajetória 0-24 meses</span><span class="text-neutral-500 text-sm ml-2">- Da primeira PME ao 5º cliente recorrente</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Mês 0-3: aprende método e entrega primeiro diagnóstico. Mês 4-6: primeiro piloto. Mês 7-12: 3 clientes em manutenção. Mês 13-24: consolida R$ 10-25k/mês.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Calibra expectativa. Quem espera resultado em 30 dias desiste no mês 4. Quem entende a curva acumula.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">8-15 meses até base recorrente · indicação espontânea como motor · escalada por vertical.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">🧱</span><div><span class="font-medium">3 modelos de atuação</span><span class="text-neutral-500 text-sm ml-2">- PJ solo · CLT · consultoria pequena</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">PJ solo (modelo tripartite), CLT em empresa que contrata implementador (R$ 10-30k/mês), consultoria pequena 3-5 pessoas (R$ 1,5-2,5M/ano).</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Os três caminhos são viáveis. Você escolhe o seu sabendo trade-off de cada.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Solo: liberdade + variabilidade · CLT: estabilidade + teto · consultoria: alavanca + complexidade.</p></div></div></div></div>
+
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-1-3')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-1-3.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 1.4 -->
+  <div id="modulo-1-4" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.4</span><span class="text-xs text-neutral-500">~30 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">🎯 A oportunidade</h3>
+      <p class="text-neutral-400 text-sm">5 setores concentram 80% da demanda. O implementador escolhe vertical, não fica genérico.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🏬</span><div><span class="font-medium">Varejo e e-commerce</span><span class="text-neutral-500 text-sm ml-2">- 22% dos projetos em produção</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Maior fatia de projetos PME com IA (22%, Nautis 2026). Casos típicos: atendimento WhatsApp, recuperação de carrinho, FAQ de produto, emissão NF-e.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o setor com maior densidade de dor e maior orçamento médio. Boa entrada para iniciantes.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">WhatsApp + Bling/Tiny · NF-e em fluxo · payback rápido (Nautis: 3,2 meses).</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🚚</span><div><span class="font-medium">Distribuidoras</span><span class="text-neutral-500 text-sm ml-2">- 18% · vendedor com WhatsApp pessoal</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Distribuidor típico tem 3-8 vendedores no WhatsApp pessoal. Perdem pedido fora do horário. Não conseguem cobrir 24/7.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Caso clássico de payback alto: agente noturno captura pedidos perdidos. Baseline fácil de medir.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Tabela de preço por cliente · catálogo SKU · WABA + ERP · HITL para pedido grande.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🩺</span><div><span class="font-medium">Clínicas e consultórios</span><span class="text-neutral-500 text-sm ml-2">- 14% · agenda + confirmação</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Recepcionista sobrecarregada confirmando consulta por ligação. Paciente novo desiste de agendar. No-show alto.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Métrica de no-show é direta. Em 30 dias se mede impacto. Cliente percebe valor rápido.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">LGPD-saúde com cuidado · integração com sistemas de agenda · triagem por sintoma com HITL.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">📚</span><div><span class="font-medium">Contábeis e jurídicos</span><span class="text-neutral-500 text-sm ml-2">- 14% · triagem documental</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Sócio sênior gastando 2-4h/dia triando documento. Cliente cobra resposta jurídica simples. Contábil responde mesma dúvida de cliente 30x/mês.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Setor que paga bem manutenção. Sócio enxerga valor em "tempo de hora cheia recuperado".</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">RAG sobre base interna · disclaimer ético · HITL para opinião · revisão por sócio.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">🏘️</span><div><span class="font-medium">Imobiliárias</span><span class="text-neutral-500 text-sm ml-2">- 12% · qualificação de lead</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Corretor recebe lead Olx/Zap, perde 2 dias pra qualificar. 80% dos leads são frios. Agente faz qualificação inicial 24/7.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ticket alto por venda fechada → cliente paga bem por melhoria pequena no funil.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Catálogo de imóveis · qualificação por orçamento/região · handoff para corretor humano.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">🎯</span><div><span class="font-medium">Por que verticalizar</span><span class="text-neutral-500 text-sm ml-2">- Genérico não vende, vertical sim</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Após 2-3 PMEs num setor você tem vocabulário, processos, dores, KPIs. Custo de venda cai. Indicação cresce. Margem aumenta.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">O genérico compete por preço. O vertical compete por especialização. É a estratégia de longo prazo.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Playbook por vertical · case interno · referência cruzada entre clientes do setor.</p></div></div></div></div>
+
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-1-4')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-1-4.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 1.5 -->
+  <div id="modulo-1-5" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.5</span><span class="text-xs text-neutral-500">~20 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">🆓 Por que gratuito</h3>
+      <p class="text-neutral-400 text-sm">O aluno não é o produto. O aluno é o mercado. Conteúdo é contribuição.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">💸</span><div><span class="font-medium">O aluno é o mercado</span><span class="text-neutral-500 text-sm ml-2">- Não o produto</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Programa não vende curso, mensalidade, certificação, AIOS, franquia ou exclusividade. Vive da contribuição ao ecossistema.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Garante incentivo alinhado: o programa cresce quando você ganha mercado, não quando você renova mensalidade.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Sem upsell · sem selo restritivo · comunidade aberta.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🌎</span><div><span class="font-medium">Acesso radical</span><span class="text-neutral-500 text-sm ml-2">- Em português, sem barreira</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Conteúdo todo em português brasileiro, em texto direto, sem login, sem cadastro, sem captura. Quem chega, lê.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A maior barreira do mercado é cognitiva, não financeira. Português + texto direto = barreira baixa.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Operador de PME · técnico se reposicionando · profissional liberal verticalizando.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🛠️</span><div><span class="font-medium">AIOS open source</span><span class="text-neutral-500 text-sm ml-2">- Biblioteca de módulos prontos</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Coleção de módulos n8n, system prompts, playbooks, checklists e contratos — tudo aberto e reutilizável.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Você não começa do zero. Adapta módulos prontos para cada cliente. Reduz tempo de implementação.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Padrões de design AIOS · níveis de aprovação humana · convenções de módulo.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🤝</span><div><span class="font-medium">Comunidade longitudinal</span><span class="text-neutral-500 text-sm ml-2">- inema.vip · 100k ex-SISNEMA</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Comunidade ativa na inema.vip + base de 100k ex-alunos do SISNEMA + 500k seguidores em redes sociais.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Concorrente pago não consegue replicar. Indicação espontânea, troca técnica, validação de caso real.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Mentoria horizontal · cases reais · validação técnica · rede de indicação.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">📡</span><div><span class="font-medium">Como o programa se sustenta</span><span class="text-neutral-500 text-sm ml-2">- Ecossistema, não conteúdo</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Sustento vem do ecossistema (inema.vip, palestras, parcerias setoriais, marca pessoal) — não da venda do conteúdo educativo.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Entende a sustentabilidade do programa. Não vai sumir em 6 meses por falta de mensalidade.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Modelo de contribuição · marca aberta · sem incentivo perverso.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">🪪</span><div><span class="font-medium">Licença e reuso</span><span class="text-neutral-500 text-sm ml-2">- Pode adaptar e redistribuir</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Conteúdo livre para uso, adaptação e redistribuição. Você pode usar com seus clientes, em palestra, em curso interno.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Multiplica o alcance e te beneficia: pode citar como fonte, usar em proposta, treinar champion interno.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Atribuição opcional · uso comercial liberado · sem cláusula de exclusividade.</p></div></div></div></div>
+
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-1-5')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-1-5.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- MODULO 1.6 -->
+  <div id="modulo-1-6" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+    <div class="p-6 border-b border-dark-600">
+      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.6</span><span class="text-xs text-neutral-500">~25 min</span></div>
+      <h3 class="text-2xl font-bold mb-2">🗺️ Como funciona</h3>
+      <p class="text-neutral-400 text-sm">10 a 12 semanas, ~100 horas, certificação por entrega real. O contrato implícito do programa.</p>
+    </div>
+    <div class="divide-y divide-dark-600">
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">📆</span><div><span class="font-medium">Calendário 10-12 semanas</span><span class="text-neutral-500 text-sm ml-2">- ~8-10h/semana</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Sem cronograma fechado. Você passa por T1-T6 no seu ritmo. Estimativa total: ~100 horas, equivalente a 10-12 semanas em dedicação parcial.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Calibra esforço esperado. Quem espera resultado em 2 semanas desiste. Quem entende a curva, persiste.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Estudo + execução paralelos · ritmo individual · entrega real fecha o ciclo.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">📚</span><div><span class="font-medium">As 6 trilhas</span><span class="text-neutral-500 text-sm ml-2">- Fundamentos + DPIA + Aplicação</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">T1 Fundamentos · T2 Diagnosticar · T3 Processar · T4 Instruir · T5 Automatizar · T6 Aplicação. Cada uma tem 6 módulos.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Trilhas são sequenciais mas auto-contidas. Você pode pular pra resolver um problema específico.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">DPIA como espinha dorsal · T1 e T6 emolduram · biblioteca AIOS atravessa todas.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">✅</span><div><span class="font-medium">Certificação por entrega real</span><span class="text-neutral-500 text-sm ml-2">- 1 diagnóstico pago + 1 piloto</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Critério único: você entrega 1 diagnóstico pago real em PME + 1 piloto em produção em PME (pode ser a mesma). Sem prova, sem mensalidade.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Obriga aprendizagem aplicada. Você não pode certificar lendo — só entregando.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Entrega &gt; prova · evidência real · sem barreira financeira.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🧰</span><div><span class="font-medium">Recursos do programa</span><span class="text-neutral-500 text-sm ml-2">- Biblioteca AIOS, templates, comunidade</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">9 templates operacionais (diagnóstico, baseline, RIPD, contrato, runbook, etc.) · biblioteca AIOS (P1: 8 padrões base, P2: 13 módulos verticais) · comunidade inema.vip.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Você não monta do zero. Adapta o template ao cliente em 1-2h em vez de 1-2 dias.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Templates reusáveis · stack canônica documentada · convenções de módulo AIOS.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">🤔</span><div><span class="font-medium">Para quem não é</span><span class="text-neutral-500 text-sm ml-2">- Honestidade na entrada</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Não é pra quem quer enriquecimento em 30 dias · não substitui faculdade · não é pra quem só quer "saber sobre IA" · não promete trabalho garantido.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Filtro de auto-seleção. Quem entra com expectativa errada desiste e culpa o programa.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Trabalho real · disposição a estudar · entrega obrigatória.</p></div></div></div></div>
+
+      <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left"><span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">🚀</span><div><span class="font-medium">Primeiros 30 dias</span><span class="text-neutral-500 text-sm ml-2">- Roteiro de aterrissagem</span></div></button>
+      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Semana 1-2: T1 + T2. Semana 3: identifica 1 PME pra diagnosticar. Semana 4: roda primeira entrevista, monta primeiro baseline.</p></div>
+        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">O começo mais difícil é quebrar inércia. Cronograma reduz "paralisia de análise".</p></div>
+        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Cliente piloto interno (família, amigo) · ciclo de diagnóstico curto · primeira evidência em 30 dias.</p></div></div></div></div>
+
+    </div>
+    <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+      <button onclick="openModal('modal-1-6')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+      <a href="modulo-1-6.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+    </div>
+  </div>
+
+  <!-- NAV BOTTOM -->
+  <div class="mt-12 flex flex-col sm:flex-row gap-4">
+    <a href="../../index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Voltar para início</a>
+    <a href="../trilha2/index.html" class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors">Próxima trilha: Diagnosticar →</a>
+  </div>
+
+</main>
+
+<!-- MODAIS -->
+<div id="modal-1-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.1</span><span class="font-semibold">Manifesto</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-1-1.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-1-2" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.2</span><span class="font-semibold">Tese de mercado</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-1-2.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-1-3" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.3</span><span class="font-semibold">Perfil do profissional</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-1-3.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-1-4" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.4</span><span class="font-semibold">A oportunidade</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-1-4.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-1-5" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.5</span><span class="font-semibold">Por que gratuito</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-1-5.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-1-6" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this)closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.6</span><span class="font-semibold">Como funciona</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button></div><iframe src="modulo-1-6.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+
+<footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm"><p>Profissional 2027 · <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p></div></footer>
+
+<script>
+function toggleTopic(button){const t=button.closest('.topic-item');const e=t.querySelector('.topic-explanation');const c=button.closest('.bg-dark-800');c.querySelectorAll('.topic-explanation.active').forEach(x=>{if(x!==e)x.classList.remove('active')});e.classList.toggle('active')}
+function openModal(id){const m=document.getElementById(id);if(m){m.classList.remove('hidden');document.body.style.overflow='hidden'}}
+function closeModal(){document.querySelectorAll('.modal').forEach(m=>m.classList.add('hidden'));document.body.style.overflow='auto'}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+const themeToggle=document.getElementById('theme-toggle');const dIcon=document.getElementById('theme-toggle-dark-icon');const lIcon=document.getElementById('theme-toggle-light-icon');const html=document.documentElement;
+if(localStorage.getItem('theme')==='light'||(!localStorage.getItem('theme')&&!html.classList.contains('dark'))){dIcon.classList.remove('hidden');html.classList.remove('dark')}else{lIcon.classList.remove('hidden')}
+themeToggle.addEventListener('click',()=>{dIcon.classList.toggle('hidden');lIcon.classList.toggle('hidden');html.classList.toggle('dark');localStorage.setItem('theme',html.classList.contains('dark')?'dark':'light')});
+</script>
+
+</body></html>
