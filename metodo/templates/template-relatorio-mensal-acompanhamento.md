@@ -1,6 +1,6 @@
 # Template — Relatório Mensal de Acompanhamento
 
-> **Como usar.** Relatório entregue todo mês ao dono do cliente no escopo do contrato de manutenção. Função tripla: (1) provar que o sistema continua entregando contra o baseline assinado; (2) documentar evolução do playbook e do agente; (3) sustentar a renovação do contrato. **É o documento que mais defende o contrato de manutenção em momentos de aperto financeiro do cliente** — quando o dono pensa em cortar custos, este relatório é o que separa "isso traz resultado" de "isso é mais um custo". Tamanho: 4 a 8 páginas. Formato: PDF entregue por e-mail + apresentação presencial ou videochamada nos 5 primeiros dias úteis do mês subsequente. Mantenha as mesmas seções de mês a mês — a consistência é o que constrói leitura. Cláusula 4ª do contrato de manutenção exige este relatório.
+> **Como usar.** Relatório entregue todo mês ao dono do cliente no escopo do contrato de manutençêo. Funçêo tripla: (1) provar que o sistema continua entregando contra o baseline assinado; (2) documentar evoluçêo do playbook e do agente; (3) sustentar a renovaçêo do contrato. **É o documento que mais defende o contrato de manutençêo em momentos de aperto financeiro do cliente** — quando o dono pensa em cortar custos, este relatório é o que separa "isso traz resultado" de "isso é mais um custo". Tamanho: 4 a 8 páginas. Formato: PDF entregue por e-mail + apresentaçêo presencial ou videochamada nos 5 primeiros dias úteis do mês subsequente. Mantenha as mesmas seções de mês a mês — a consistência é o que constrói leitura. Cláusula 4ª do contrato de manutençêo exige este relatório.
 
 ---
 
@@ -11,7 +11,7 @@
 **Implementador:** [nome]
 **Champion:** [nome]
 **Data de entrega:** [data]
-**Próxima reunião de apresentação:** [data, horário, local/link]
+**Próxima reuniêo de apresentaçêo:** [data, horário, local/link]
 
 ---
 
@@ -25,7 +25,7 @@
 
 Apresentado em tabela única, com a mesma estrutura todo mês. Cor verde quando ≥ meta, amarelo quando entre 70–100% da meta, vermelho quando < 70%.
 
-| Métrica | Baseline (fase D) | Meta 90d | Mês atual | Mês anterior | Variação | Status |
+| Métrica | Baseline (fase D) | Meta 90d | Mês atual | Mês anterior | Variaçêo | Status |
 |---------|-------------------|-----------|------------|---------------|-----------|--------|
 | Tempo médio de resposta | [valor] | [valor] | [valor] | [valor] | [+/-%] | verde/amarelo/vermelho |
 | Volume processado pelo agente (%) | 0% | [valor]% | [valor]% | [valor]% | [+/-pp] | [...] |
@@ -34,7 +34,7 @@ Apresentado em tabela única, com a mesma estrutura todo mês. Cor verde quando 
 | Taxa de erro de [processo] | [valor]% | [valor]% | [valor]% | [valor]% | [+/-pp] | [...] |
 
 **Comentário sobre as métricas:**
-[Explicar qualquer desvio relevante. Não esconder números ruins — declarar e propor ação.]
+[Explicar qualquer desvio relevante. Nêo esconder números ruins — declarar e propor açêo.]
 
 ---
 
@@ -46,13 +46,13 @@ Apresentado em tabela única, com a mesma estrutura todo mês. Cor verde quando 
 | [Mês 2] | R$ [...] | R$ [...] | R$ [...] |
 | [Mês atual] | R$ [...] | R$ [...] | R$ [...] |
 
-**Payback alcançado em:** [mês X] (ou "previsto para mês X" se ainda não alcançado).
+**Payback alcançado em:** [mês X] (ou "previsto para mês X" se ainda nêo alcançado).
 
 **Comentário sobre ROI:** [...]
 
 ---
 
-## 4. Operação do mês
+## 4. Operaçêo do mês
 
 ### 4.1 Volume e cobertura
 - Total de interações: [n]
@@ -62,15 +62,15 @@ Apresentado em tabela única, com a mesma estrutura todo mês. Cor verde quando 
 - Override humano após resposta do agente: [n] ([%])
 
 ### 4.2 Incidentes
-| Data | Severidade | Descrição | Tempo de resolução | Ação corretiva |
+| Data | Severidade | Descriçêo | Tempo de resoluçêo | Açêo corretiva |
 |------|------------|------------|---------------------|------------------|
 | [...] | crítico/médio/baixo | [...] | [...] | [...] |
 
-[Se nenhum incidente: declarar explicitamente. "Mês sem incidente crítico" é informação relevante.]
+[Se nenhum incidente: declarar explicitamente. "Mês sem incidente crítico" é informaçêo relevante.]
 
 ### 4.3 Plano de rollback
-- [ ] Foi acionado este mês? Sim/Não. Se sim, [descrição].
-- [ ] Foi testado este mês (simulação programada)? Sim/Não.
+- [ ] Foi acionado este mês? Sim/Nêo. Se sim, [descriçêo].
+- [ ] Foi testado este mês (simulaçêo programada)? Sim/Nêo.
 
 ---
 
@@ -81,12 +81,12 @@ Apresentado em tabela única, com a mesma estrutura todo mês. Cor verde quando 
 - Principais alterações: [...]
 
 ### 5.2 Base de conhecimento
-- Documentos adicionados: [n] — [descrição]
-- Documentos atualizados: [n] — [descrição]
+- Documentos adicionados: [n] — [descriçêo]
+- Documentos atualizados: [n] — [descriçêo]
 
 ### 5.3 Mapa de Processos
 - Novas regras formais (RN-XX): [...]
-- Novas regras tácitas (RT-XX) descobertas em produção: [...]
+- Novas regras tácitas (RT-XX) descobertas em produçêo: [...]
 - Novos casos-armadilha (CA-XX): [...]
 
 ### 5.4 Matriz HITL
@@ -94,14 +94,14 @@ Apresentado em tabela única, com a mesma estrutura todo mês. Cor verde quando 
 - Reduções de nível por evidência adversa: [...]
 
 ### 5.5 Playbook do Agente
-- Versão publicada: [v.x]
+- Versêo publicada: [v.x]
 - Seções revisadas: [...]
 
 ---
 
 ## 6. Treinamento e champion
 
-- Champion: [nome] — segue ativo? Sim/Não.
+- Champion: [nome] — segue ativo? Sim/Nêo.
 - Horas de treinamento conduzidas com o champion no mês: [n]
 - Reuniões realizadas (visitas presenciais + check-ins remotos): [n] de [n previstos no tier]
 - Micro-vídeos novos gravados no mês: [n] — totalizando [N] na biblioteca.
@@ -113,13 +113,13 @@ Apresentado em tabela única, com a mesma estrutura todo mês. Cor verde quando 
 
 Status de cada indicador-bandeira:
 
-- [ ] Uso do agente caiu mais de 20% mês a mês? **[Não]** / [Sim — descrever]
-- [ ] Champion segue na empresa? **[Sim]** / [Não — gatilho de visita extraordinária]
-- [ ] Override humano subiu acima de 30%? **[Não]** / [Sim — descrever]
-- [ ] Playbook foi atualizado nos últimos 30 dias? **[Sim]** / [Não — atualizar imediatamente]
-- [ ] Operadores voltaram a usar canal antigo (WhatsApp pessoal, planilha)? **[Não]** / [Sim — descrever]
+- [ ] Uso do agente caiu mais de 20% mês a mês? **[Nêo]** / [Sim — descrever]
+- [ ] Champion segue na empresa? **[Sim]** / [Nêo — gatilho de visita extraordinária]
+- [ ] Override humano subiu acima de 30%? **[Nêo]** / [Sim — descrever]
+- [ ] Playbook foi atualizado nos últimos 30 dias? **[Sim]** / [Nêo — atualizar imediatamente]
+- [ ] Operadores voltaram a usar canal antigo (WhatsApp pessoal, planilha)? **[Nêo]** / [Sim — descrever]
 
-Qualquer "Sim" nos três primeiros ou "Não" nos dois últimos gera **plano de recuperação** na seção 9.
+Qualquer "Sim" nos três primeiros ou "Nêo" nos dois últimos gera **plano de recuperaçêo** na seçêo 9.
 
 ---
 
@@ -132,14 +132,14 @@ Qualquer "Sim" nos três primeiros ou "Não" nos dois últimos gera **plano de r
 ## 9. Recomendações e próximo mês
 
 ### 9.1 Ações para o próximo mês
-- [ ] [Ação 1 — responsável, prazo]
-- [ ] [Ação 2 — responsável, prazo]
+- [ ] [Açêo 1 — responsável, prazo]
+- [ ] [Açêo 2 — responsável, prazo]
 
-### 9.2 Plano de recuperação (se aplicável — Seção 7)
+### 9.2 Plano de recuperaçêo (se aplicável — Seçêo 7)
 [Descrever o quê + prazo + responsável.]
 
-### 9.3 Recomendação estratégica ao dono
-[1 parágrafo. Pode ser: continuar como está; subir nível HITL em alguma ação; iniciar próximo ciclo DPIA em outro processo; revisar pricing do cliente final aproveitando a velocidade nova; etc.]
+### 9.3 Recomendaçêo estratégica ao dono
+[1 parágrafo. Pode ser: continuar como está; subir nível HITL em alguma açêo; iniciar próximo ciclo DPIA em outro processo; revisar pricing do cliente final aproveitando a velocidade nova; etc.]
 
 ---
 
@@ -149,7 +149,7 @@ Qualquer "Sim" nos três primeiros ou "Não" nos dois últimos gera **plano de r
 
 ## 1. Resumo executivo
 
-Primeiro mês completo pós-deploy. Sistema entrou em produção em 03/jun e operou estável por 28 dias. **Todas as 4 metas de 90 dias foram atingidas já no primeiro mês**, com destaque para a recuperação de R$ 26.400 em receita que vinha sendo perdida por demora no atendimento. Adoção pelo agente alcançou 78%, acima da meta de 70%. Cristiane operou a semana 4 inteira sem acionar suporte do implementador. Nenhum incidente crítico no mês. Recomendação: manter operação atual no próximo mês, avaliar subida de HITL para nível 4 em "confirmação de status de pedido conhecido" e iniciar conversa sobre 2º ciclo DPIA (cobrança de inadimplentes).
+Primeiro mês completo pós-deploy. Sistema entrou em produçêo em 03/jun e operou estável por 28 dias. **Todas as 4 metas de 90 dias foram atingidas já no primeiro mês**, com destaque para a recuperaçêo de R$ 26.400 em receita que vinha sendo perdida por demora no atendimento. Adoçêo pelo agente alcançou 78%, acima da meta de 70%. Cristiane operou a semana 4 inteira sem acionar suporte do implementador. Nenhum incidente crítico no mês. Recomendaçêo: manter operaçêo atual no próximo mês, avaliar subida de HITL para nível 4 em "confirmaçêo de status de pedido conhecido" e iniciar conversa sobre 2º ciclo DPIA (cobrança de inadimplentes).
 
 ## 2. Métricas
 
@@ -169,9 +169,9 @@ Primeiro mês completo pós-deploy. Sistema entrou em produção em 03/jun e ope
 |-----|------------------|-----------|------------------------|
 | Jun | R$ 26.400 (receita) + R$ 3.040 (operacional) - R$ 3.300 (custo agente) = **R$ 26.140** | R$ 26.140 | R$ 42.000 − R$ 26.140 = R$ 15.860 |
 
-Payback projetado para **mês 2 (julho)**, considerando manutenção do ritmo.
+Payback projetado para **mês 2 (julho)**, considerando manutençêo do ritmo.
 
-## 4. Operação
+## 4. Operaçêo
 
 - Total de interações jun: 6.247.
 - Tratadas pelo agente sem escalonamento: 4.873 (78%).
@@ -180,35 +180,35 @@ Payback projetado para **mês 2 (julho)**, considerando manutenção do ritmo.
 - Override humano: 366 (6%).
 
 **Incidentes:**
-| Data | Severidade | Descrição | Resolução | Ação |
+| Data | Severidade | Descriçêo | Resoluçêo | Açêo |
 |------|------------|------------|-----------|------|
 | 09/jun | médio | Agente respondeu R$ 178 para Heineken Long Neck — preço da caixa 600ml chumbinho | 8 min — Cristiane corrigiu na thread | Ajuste no glossário Bloco 3 do system prompt |
-| 22/jun | médio | Agente cobrando preço cheio Heineken 0,0 com promoção de inverno ativa | dia mesmo | Atualização RN-02 c/ tabela sazonal |
+| 22/jun | médio | Agente cobrando preço cheio Heineken 0,0 com promoçêo de inverno ativa | dia mesmo | Atualizaçêo RN-02 c/ tabela sazonal |
 
-Plano de rollback testado em 22/jun (simulação programada — 11 min). Não acionado em produção.
+Plano de rollback testado em 22/jun (simulaçêo programada — 11 min). Nêo acionado em produçêo.
 
 ## 5. Ajustes
 
 - System prompt: v1.0 (03/jun) → v1.1 (10/jun) → v1.2 (22/jun). Principais: glossário Heineken; tabela sazonal; reforço RT-04 (validade sempre escala).
 - Base de conhecimento: +6 documentos (catálogo atualizado, política sazonal de inverno, lista VIP atualizada com 2 novos).
 - Mapa de Processos v1.3: +1 RT-05 ("cliente interior aceita boleto 21 dias").
-- Matriz HITL: sem alteração. Avaliação para julho: subir "confirmar status de pedido conhecido" de nível 3 para 4.
+- Matriz HITL: sem alteraçêo. Avaliaçêo para julho: subir "confirmar status de pedido conhecido" de nível 3 para 4.
 - Playbook: v1.3, seções 6 e 7 revisadas com Cristiane.
 
 ## 6. Treinamento
 
-- Cristiane: ativa, com energia. 6h de treinamento total no mês (5 dias job shadowing + 1 sessão sobre uso do diário de aprendizado).
+- Cristiane: ativa, com energia. 6h de treinamento total no mês (5 dias job shadowing + 1 sessêo sobre uso do diário de aprendizado).
 - 2 visitas presenciais realizadas (07/jun e 21/jun). 2 check-ins remotos (14/jun, 28/jun). 100% das reuniões previstas no tier intermediário.
 - 6 micro-vídeos novos gravados (biblioteca total: 6).
 - Felipe acompanhou as visitas — em 6 meses migra para financeiro interno conforme combinado em D.
 
 ## 7. Sinais precoces — todos OK
 
-- [x] Uso do agente caiu > 20%? **Não**.
+- [x] Uso do agente caiu > 20%? **Nêo**.
 - [x] Champion na empresa? **Sim**.
-- [x] Override > 30%? **Não** (11%).
+- [x] Override > 30%? **Nêo** (11%).
 - [x] Playbook atualizado < 30 dias? **Sim** (v1.3 em 22/jun).
-- [x] Operadores voltaram ao canal antigo? **Não**.
+- [x] Operadores voltaram ao canal antigo? **Nêo**.
 
 ## 8. O que melhorou
 
@@ -225,16 +225,16 @@ Plano de rollback testado em 22/jun (simulação programada — 11 min). Não ac
 - [ ] 1 micro-vídeo novo (caso "cliente novo do interior") — implementador, até 21/jul.
 - [ ] Conversa inicial com Reinaldo sobre 2º ciclo DPIA (cobrança) — visita 21/jul.
 
-### Recomendação estratégica
-Mês 1 indica que o sistema está estável, o time absorveu bem, e há capacidade adicional do champion. Recomendamos: iniciar avaliação de um 2º ciclo DPIA sobre cobrança de inadimplentes (R$ 47k em atraso > 30 dias no Bling — potencial recuperação significativa). Diagnóstico paga (R$ 4.500), começa após 90 dias do projeto atual estabilizado.
+### Recomendaçêo estratégica
+Mês 1 indica que o sistema está estável, o time absorveu bem, e há capacidade adicional do champion. Recomendamos: iniciar avaliaçêo de um 2º ciclo DPIA sobre cobrança de inadimplentes (R$ 47k em atraso > 30 dias no Bling — potencial recuperaçêo significativa). Diagnóstico paga (R$ 4.500), começa após 90 dias do projeto atual estabilizado.
 
 ---
 
 ## Dicas de uso
 
-- **Mesma estrutura todo mês.** A consistência é o que constrói leitura. Não reinvente o relatório a cada mês.
-- **Apresente presencialmente quando possível.** Relatório por e-mail vira anexo não-aberto; reunião de 30 min em torno do PDF vira contrato renovado.
-- **Sem maquiagem.** Mês ruim é mês ruim. Esconder vira descoberta dolorosa 3 meses depois. Declarar + plano de recuperação no mesmo relatório constrói confiança.
+- **Mesma estrutura todo mês.** A consistência é o que constrói leitura. Nêo reinvente o relatório a cada mês.
+- **Apresente presencialmente quando possível.** Relatório por e-mail vira anexo nêo-aberto; reuniêo de 30 min em torno do PDF vira contrato renovado.
+- **Sem maquiagem.** Mês ruim é mês ruim. Esconder vira descoberta dolorosa 3 meses depois. Declarar + plano de recuperaçêo no mesmo relatório constrói confiança.
 - **Status colorido funciona.** Verde/amarelo/vermelho é universal e o dono lê em 10 segundos.
-- **Recomendação estratégica é a parte mais negligenciada — e mais valiosa.** É onde o implementador deixa de ser "operador" e vira "consultor". É o que diferencia tier Intermediário/Avançado de Básico aos olhos do dono.
+- **Recomendaçêo estratégica é a parte mais negligenciada — e mais valiosa.** É onde o implementador deixa de ser "operador" e vira "consultor". É o que diferencia tier Intermediário/Avançado de Básico aos olhos do dono.
 - **Use o relatório como insumo para pedir indicações.** Mês com resultado bom é mês para perguntar "quem mais você conhece com problema parecido?". Ver Pesquisa F §10.2 — estratégia cliente #3.
