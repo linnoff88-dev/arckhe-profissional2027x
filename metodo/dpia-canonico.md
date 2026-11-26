@@ -1,6 +1,6 @@
 # Método DPIA — Manual Canônico
 
-> Versêo 1.0 · maio de 2026 · Profissional 2027 · INEMA.CLUB
+> Versêo 1.0 · maio de 2026 · Profissional 2027 · ARCKHÉ AI
 > Documento de referência. Todo conteúdo do programa cita esta fonte.
 > Licença: aberto, gratuito, livre para adaptaçêo com atribuiçêo.
 
@@ -482,4 +482,4 @@ Top 10 erros — em ordem decrescente de frequência observada nos casos de falh
 
 ---
 
-*Manual canônico DPIA v1.0 — Profissional 2027 — INEMA.CLUB. Documento vivo. Próximas revisões incorporam aprendizados de campo das primeiras turmas e atualizações de stack.*
+*Manual canônico DPIA v1.0 — Profissional 2027 — ARCKHÉ AI. Documento vivo. Próximas revisões incorporam aprendizados de campo das primeiras turmas e atualizações de stack.*

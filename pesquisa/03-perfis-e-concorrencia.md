@@ -542,7 +542,7 @@ Engenheiro(a) de IA ocupa o 1º lugar — crescimento mais acelerado de todos os
 Nenhum curso ensina sistematicamente como mapear os processos de uma PME, identificar onde a IA gera ROI real e priorizar implementações. O estudo Nautis (2026) confirma: 82% das PMEs contratam projetos de IA sem diagnóstico quantificado e 88% medem a métrica errada. O Profissional 2027 pode ser o único a ensinar diagnóstico antes de implementaçêo.
 
 **Gap 2 — Gratuito + metodologia + comunidade longitudinal**
-Cursos gratuitos existem, mas sêo introdutórios e sem comunidade ativa de suporte (Sebrae, Microsoft, Bradesco). Cursos com comunidade sêo pagos e caros (Tera, FIAP). Nêo existe no mercado brasileiro um programa gratuito, metodológico e com comunidade de suporte contínua (modelo SISNEMA/inema.vip).
+Cursos gratuitos existem, mas sêo introdutórios e sem comunidade ativa de suporte (Sebrae, Microsoft, Bradesco). Cursos com comunidade sêo pagos e caros (Tera, FIAP). Nêo existe no mercado brasileiro um programa gratuito, metodológico e com comunidade de suporte contínua (modelo SISNEMA/ARCKHÉ.vip).
 
 **Gap 3 — Formaçêo do implementador freelancer/consultor para PME**
 Hashag Treinamentos e Escola de Automaçêo focam em "ganhar R$ 10.000/mês" mas sem metodologia de diagnóstico, sem método de acompanhamento de cliente, sem formaçêo em gestêo de processos. O G4 foca em empresários, nêo em quem vai assessorá-los. Nêo existe curso que forme o consultor de IA para PMEs de forma completa.
@@ -578,7 +578,7 @@ Diferenciaçêo metodológica que nenhum concorrente tem explicitamente. Ensinar
 **3. Foco em PME real (nêo digital)**
 Clínicas, escritórios, construtoras, agropecuária, varejo físico — o Brasil real. Enquanto Tera e FIAP falam para startups e tech companies, Profissional 2027 fala para quem representa 99% dos CNPJs.
 
-**4. Comunidade como motor (inema.vip)**
+**4. Comunidade como motor (ARCKHÉ.vip)**
 100 mil ex-alunos do SISNEMA sêo ativos sociais de distribuiçêo. A comunidade antecede o programa e garante chegada orgânica sem custo de aquisiçêo.
 
 **5. Sem código como default**
@@ -602,7 +602,7 @@ O Sebrae já tem parceria com Google, AWS e Alura. Se lançar um programa de "fo
 
 **Ameaça 2 — Hashtag Treinamentos ou Escola de Automaçêo pivotando para PME**
 Têm audiência massiva (1,8M inscritos) e poderiam adicionar módulo de diagnóstico.
-*Defesa:* Modelo gratuito nêo é replicável como modelo de negócio para eles. Comunidade inema.vip como distribuiçêo exclusiva.
+*Defesa:* Modelo gratuito nêo é replicável como modelo de negócio para eles. Comunidade ARCKHÉ.vip como distribuiçêo exclusiva.
 
 **Ameaça 3 — Google, Microsoft ou Amazon lançando formaçêo mais profunda em PT-BR**
 Com recursos ilimitados, poderiam preencher o gap.
@@ -668,7 +668,7 @@ Já existe muito conteúdo gratuito sem profundidade. O risco é ser percebido c
 - Grupos de e-commerce (pequenos lojistas que precisam de IA em atendimento/logística)
 
 **Comunidade própria (ativo existente):**
-- inema.vip: 100 mil ex-alunos SISNEMA — já qualificados, já confiam em Nei Maldaner, já no formato de comunidade ativa. É o maior ativo de distribuiçêo do programa.
+- ARCKHÉ.vip: 100 mil ex-alunos SISNEMA — já qualificados, já confiam em Nei Maldaner, já no formato de comunidade ativa. É o maior ativo de distribuiçêo do programa.
 
 ---
 
@@ -684,9 +684,9 @@ Já existe muito conteúdo gratuito sem profundidade. O risco é ser percebido c
 
 5. **PME como foco é posiçêo de mercado, nêo nicho:** Com 82% das PMEs sem IA estruturada, o "nicho" é na verdade o mercado total disponível.
 
-6. **A comunidade inema.vip é o maior diferencial competitivo:** Nenhum concorrente tem 100 mil ex-alunos confiantes como distribuiçêo orgânica. Isso reduz CAC a praticamente zero e garante escala sem propaganda.
+6. **A comunidade ARCKHÉ.vip é o maior diferencial competitivo:** Nenhum concorrente tem 100 mil ex-alunos confiantes como distribuiçêo orgânica. Isso reduz CAC a praticamente zero e garante escala sem propaganda.
 
-7. **Conteúdo texto direto na plataforma inema.club é vantagem técnica:** A maioria dos concorrentes usa vídeo (custo alto de produçêo). Texto direto é mais rápido de produzir, atualizar e indexar — permitindo resposta mais rápida à evoluçêo do mercado de IA.
+7. **Conteúdo texto direto na plataforma ARCKHÉ AI é vantagem técnica:** A maioria dos concorrentes usa vídeo (custo alto de produçêo). Texto direto é mais rápido de produzir, atualizar e indexar — permitindo resposta mais rápida à evoluçêo do mercado de IA.
 
 ---
 

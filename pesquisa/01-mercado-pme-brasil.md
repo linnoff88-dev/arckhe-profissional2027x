@@ -538,4 +538,4 @@ Setores com WhatsApp como canal crítico E operaçêo em volume alto sêo os que
 
 ---
 
-*Pesquisa elaborada em maio de 2026 para o programa Profissional 2027 — Nei Maldaner / INEMA.CLUB*
+*Pesquisa elaborada em maio de 2026 para o programa Profissional 2027 — Nei Maldaner / ARCKHÉ AI*

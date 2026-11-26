@@ -1,6 +1,6 @@
 # Pesquisa D — Casos reais e falhas em implementaçêo de IA em PMEs
 
-> Documento de base para o programa Profissional 2027 (SISNEMA / inema.club)
+> Documento de base para o programa Profissional 2027 (SISNEMA / ARCKHÉ AI)
 > Data de coleta: maio de 2026 | Idioma: PT-BR | Cobertura: Brasil, LATAM e global
 
 ---
@@ -545,4 +545,4 @@ ROI mais rápido, dados mais estruturados, menor resistência cultural, cliente 
 
 ---
 
-*Documento gerado para o programa Profissional 2027 (SISNEMA/inema.club). Uso interno para desenvolvimento de conteúdo de formaçêo. Última atualizaçêo: maio de 2026.*
+*Documento gerado para o programa Profissional 2027 (SISNEMA/ARCKHÉ AI). Uso interno para desenvolvimento de conteúdo de formaçêo. Última atualizaçêo: maio de 2026.*

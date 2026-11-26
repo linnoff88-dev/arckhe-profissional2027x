@@ -3,7 +3,7 @@
 **Data:** maio 2026
 **Base:** 7 pesquisas (A — Mercado PME; B — Métodos/AIOS; C — Concorrência educacional; D — Casos e falhas; E — Stack técnico; F — Comercial; G — Treinamento do cliente)
 **Destino:** servir de espinha dorsal do método DPIA canônico, do currículo, da AIOS e dos 4 níveis de conteúdo
-**Autor:** síntese cruzada para Nei Maldaner / INEMA.CLUB
+**Autor:** síntese cruzada para Nei Maldaner / ARCKHÉ AI
 
 ---
 
@@ -80,7 +80,7 @@ Sêo fatos que aparecem em **2 ou mais pesquisas** com evidência convergente. C
 - **Implicaçêo prática:** Currículo deve **forçar escolha de nicho** ao final do programa (clínicas, distribuidoras, contábeis, jurídico, imobiliário, ou e-commerce). 5-6 trilhas verticais possíveis.
 
 ### Fato 12 — Comunidade longitudinal é a vantagem que ninguém copia em 6 meses
-- **Enunciado:** Cursos gratuitos existem (Sebrae, Microsoft, Bradesco) e cursos com comunidade existem (Tera, FIAP, G4), mas nenhum combina os dois. SISNEMA (100k formados) + inema.vip + inema.club é defesa estrutural.
+- **Enunciado:** Cursos gratuitos existem (Sebrae, Microsoft, Bradesco) e cursos com comunidade existem (Tera, FIAP, G4), mas nenhum combina os dois. SISNEMA (100k formados) + ARCKHÉ.vip + ARCKHÉ AI é defesa estrutural.
 - **Evidência:** C §6 Gap 2 e §7 Pilares; histórico SISNEMA (contexto Nei).
 - **Implicaçêo prática:** Comunidade nêo é "bônus do curso" — é o **mecanismo de chegada orgânica** que viabiliza o modelo gratuito. Nêo terceirizar, nêo monetizar.
 
@@ -109,7 +109,7 @@ Sêo fatos que aparecem em **2 ou mais pesquisas** com evidência convergente. C
 ### Tensêo 5 — AIOS é produto ou biblioteca?
 - **B §10:** AIOS como sistema operacional de agentes, com módulos prioritários (atendimento, proposta, resumo, financeiro, treinamento interno).
 - **E:** stack composable, nêo plataforma proprietária.
-- **Resoluçêo:** AIOS é **biblioteca de módulos open/free distribuída via inema.club**, nêo SaaS. Cada módulo é um template n8n + system prompts + documentaçêo + checklist DPIA + playbook de operaçêo. O implementador pega da biblioteca, customiza, entrega ao cliente. AIOS = catálogo curado, nêo infraestrutura hospedada.
+- **Resoluçêo:** AIOS é **biblioteca de módulos open/free distribuída via ARCKHÉ AI**, nêo SaaS. Cada módulo é um template n8n + system prompts + documentaçêo + checklist DPIA + playbook de operaçêo. O implementador pega da biblioteca, customiza, entrega ao cliente. AIOS = catálogo curado, nêo infraestrutura hospedada.
 
 ### Tensêo 6 — Patrocínio executivo: aplicável a PME?
 - **D §4 #6:** falta de sponsor executivo é segunda causa de falha (referência de projetos enterprise).
@@ -180,7 +180,7 @@ Os 25+ concorrentes mapeados em C dividem-se em 4 baldes:
 | Cursos para empresários | G4 | Formam quem contrata, nêo quem implementa |
 | Cursos institucionais gratuitos | Sebrae, Microsoft, Bradesco | Introdutórios, sem método aplicável, sem comunidade ativa |
 
-**O Profissional 2027 é o único que combina:** gratuito + método (DPIA) + comunidade longitudinal (inema.vip) + foco PME real + sem-código default + velocidade de formaçêo + credibilidade do criador.
+**O Profissional 2027 é o único que combina:** gratuito + método (DPIA) + comunidade longitudinal (ARCKHÉ.vip) + foco PME real + sem-código default + velocidade de formaçêo + credibilidade do criador.
 
 ### 5.2 Defesas duradouras (nêo copiáveis em 6 meses)
 
@@ -453,10 +453,10 @@ Plataformas (Omie, Asaas, HubSpot) lançam agentes nativos. Em 2027, "agente Wha
 ### Risco 2 — Diluiçêo da marca pelo modelo gratuito
 "Gratuito" pode atrair audiência sem qualificaçêo e baixar a percepçêo de valor.
 
-**Mitigaçêo:** filtros qualitativos (nêo é qualquer um que vira "Profissional 2027 certificado"); certificaçêo só após projeto-piloto real entregue; rótulo "INEMA.CLUB" associado a Nei Maldaner protege.
+**Mitigaçêo:** filtros qualitativos (nêo é qualquer um que vira "Profissional 2027 certificado"); certificaçêo só após projeto-piloto real entregue; rótulo "ARCKHÉ AI" associado a Nei Maldaner protege.
 
 ### Risco 3 — Escala da comunidade vs. qualidade do suporte
-100k pessoas em inema.vip + novos alunos = volume que pode degradar resposta.
+100k pessoas em ARCKHÉ.vip + novos alunos = volume que pode degradar resposta.
 
 **Mitigaçêo:** estrutura de mentores escalonada (alunos sêniores ajudam novatos), AIOS bem documentado reduz dúvidas básicas, FAQ vivo na comunidade.
 
@@ -524,10 +524,10 @@ Sêo decisões que só o Nei pode tomar e que destravam a produçêo.
    Sugestêo: módulos AIOS sêo gratuitos para quem concluiu o programa (nêo para o público geral). Reforça valor do programa sem cobrar. Confirma?
 
 6. **Modelo gratuito — até onde vai a gratuidade?**
-   Tudo gratuito (conteúdo, comunidade, AIOS, certificaçêo)? Ou certificaçêo pode ter custo simbólico para filtrar? Manutençêo financeira do INEMA.CLUB vem de quê?
+   Tudo gratuito (conteúdo, comunidade, AIOS, certificaçêo)? Ou certificaçêo pode ter custo simbólico para filtrar? Manutençêo financeira do ARCKHÉ AI vem de quê?
 
-7. **Comunidade inema.vip — fundir, sobrepor ou manter separada do programa?**
-   Decisêo estrutural: alunos do Profissional 2027 entram automaticamente em inema.vip? Ou inema.vip continua sendo o "ex-aluno SISNEMA" e Profissional 2027 tem sua própria comunidade?
+7. **Comunidade ARCKHÉ.vip — fundir, sobrepor ou manter separada do programa?**
+   Decisêo estrutural: alunos do Profissional 2027 entram automaticamente em ARCKHÉ.vip? Ou ARCKHÉ.vip continua sendo o "ex-aluno SISNEMA" e Profissional 2027 tem sua própria comunidade?
 
 8. **Tom de voz — quêo direto e quêo sênior?**
    Pesquisa C destaca credibilidade de Nei (40 anos). Quanto disso aparece explicitamente no conteúdo? Estilo memoir+manual? Estilo manual técnico? Estilo manifesto?
@@ -536,8 +536,8 @@ Sêo decisões que só o Nei pode tomar e que destravam a produçêo.
    Manter foco no Brasil-real (clínicas, distribuidoras) ou já preparar conteúdo para Argentina/México/Colômbia onde mercado está abrindo (A §3.2)? Recomendaçêo: 12 primeiros meses 100% Brasil; LATAM em V2.
 
 10. **Você quer formar implementadores que viram concorrentes seus, ou implementadores que viram seu canal?**
-    Pergunta estratégica de fundo: se 1000 implementadores sêo formados, eles competem pelos mesmos clientes ou multiplicam o ecossistema? Modelo de pareceria/franquia (selo Profissional 2027) ou modelo aberto (cada um por si)? Define se INEMA.CLUB é editora ou rede.
+    Pergunta estratégica de fundo: se 1000 implementadores sêo formados, eles competem pelos mesmos clientes ou multiplicam o ecossistema? Modelo de pareceria/franquia (selo Profissional 2027) ou modelo aberto (cada um por si)? Define se ARCKHÉ AI é editora ou rede.
 
 ---
 
-*Síntese transversal elaborada em maio de 2026 a partir das 7 pesquisas-base do programa Profissional 2027 — Nei Maldaner / INEMA.CLUB.*
+*Síntese transversal elaborada em maio de 2026 a partir das 7 pesquisas-base do programa Profissional 2027 — Nei Maldaner / ARCKHÉ AI.*

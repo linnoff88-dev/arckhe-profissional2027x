@@ -193,7 +193,7 @@ Em até 5 parágrafos, descreva:
 
 ---
 
-*Diagnóstico elaborado por [Nome do implementador] — Profissional 2027 — INEMA.CLUB. Documento entregue em [data]. Válido por 60 dias para fins comerciais.*
+*Diagnóstico elaborado por [Nome do implementador] — Profissional 2027 — ARCKHÉ AI. Documento entregue em [data]. Válido por 60 dias para fins comerciais.*
 
 ---
 

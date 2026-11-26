@@ -8,7 +8,7 @@
 
 Programa gratuito de formaêÂ§êÂ£o de **Implementadores de SoluêÂ§êÂµes de IA** para pequenas e mêÂ©dias empresas brasileiras.
 
-ConstruêÂ­do pela comunidade [inema.vip](https://inema.vip) e publicado em texto direto e prêÂ¡tico na plataforma [inema.club](https://inema.club).
+ConstruêÂ­do pela comunidade [ARCKHÉ.vip](https://ARCKHÉ.vip) e publicado em texto direto e prêÂ¡tico na plataforma [ARCKHÉ AI](https://ARCKHÉ AI).
 
 > *"NêÂ£o ensinamos a colecionar ferramentas. Formamos profissionais para sair da curiosidade sobre IA e entrar no mercado real: diagnosticar pequenas empresas, vender soluêÂ§êÂµes simples, implementar assistentes personalizados e treinar clientes para vender mais, atender melhor e trabalhar com menos burocracia."*
 
@@ -18,7 +18,7 @@ ConstruêÂ­do pela comunidade [inema.vip](https://inema.vip) e publicado em 
 
 - **ResponsêÂ¡vel e curador:** Nei Maldaner ê¢â¬â 40 anos de TI, fundador do SISNEMA (100 mil profissionais de TI formados).
 - **Modelo:** 100% gratuito, open source. O programa nêÂ£o vende; o aluno vende.
-- **DistribuiêÂ§êÂ£o:** comunidade inema.vip + plataforma inema.club + redes sociais (500k seguidores).
+- **DistribuiêÂ§êÂ£o:** comunidade ARCKHÉ.vip + plataforma ARCKHÉ AI + redes sociais (500k seguidores).
 - **MêÂ©todo:** **DPIA** ê¢â¬â Diagnosticar ê¢â â Processar ê¢â â Instruir ê¢â â Automatizar, com Acompanhamento como loop externo de manutenêÂ§êÂ£o.
 - **DuraêÂ§êÂ£o:** 10ê¢â¬â12 semanas, ~100 horas.
 - **CertificaêÂ§êÂ£o:** mediante entrega de 1 diagnêÂ³stico pago real + 1 piloto em PME real.
@@ -50,13 +50,13 @@ O curso completo estêÂ¡ em HTML estêÂ¡tico (sem build, sem dependê�
 
 ConteêÂºdo livre para uso, adaptaêÂ§êÂ£o e redistribuiêÂ§êÂ£o por qualquer pessoa ou comunidade.
 
-<!-- inema-backlink:v1 -->
-## Mais no INEMA.CLUB
+<!-- ARCKHÉ-backlink:v1 -->
+## Mais no ARCKHÉ AI
 
-- [Ficha completa deste curso](https://www.inema.club/cursos/112-profissional-2027-implementadores-de-ia-para-pmes/)
-- [Guia: como aprender inteligêÂªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.inema.club/cursos/)
-<!-- /inema-backlink:v1 -->
+- [Ficha completa deste curso](https://www.ARCKHÉ AI/cursos/112-profissional-2027-implementadores-de-ia-para-pmes/)
+- [Guia: como aprender inteligêÂªncia artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
+<!-- /ARCKHÉ-backlink:v1 -->
 
 ---
 

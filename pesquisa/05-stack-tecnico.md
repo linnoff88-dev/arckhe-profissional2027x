@@ -1,7 +1,7 @@
 # Pesquisa E — Stack técnico real para implementador de IA em PME
 
 **Data:** Maio 2026
-**Programa:** Profissional 2027 — SISNEMA / inema.vip
+**Programa:** Profissional 2027 — SISNEMA / ARCKHÉ.vip
 
 ---
 
